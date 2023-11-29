@@ -13,6 +13,26 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'custom-gray': '#F3F4F6',
+        'custom-gray-1': '#F9FAFB',
+        'custom-gray-link': '#64748B',
+        'custom-blue-opacaty': '#CBEAF8',
+        'custom-blue': '#18BFFF',
+        'custom-green': '#2CD673',
+        'custom-dark-1': '#4B5563',
+        'custom-dark-2': '#374151',
+        'custom-dark-3': '#1F2A37',
+        'custom-dark-4': '#111928',
+        'custom-dark-text': '#8899A8',
+
+        'custom-Opacity-blue': '#EBF6FB',
+        'custom-Opacity-green': '#ECF7F3',
+      },
+      screens: {
+        'tall': { 
+          'raw': '(min-height: 700px)' },
+      },
     },
   },
   plugins: [],
