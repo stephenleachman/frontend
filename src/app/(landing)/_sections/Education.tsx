@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import SkilsImage from '@/../public/images/skils/skils-image.png';
 import { FaExternalLinkAlt } from "react-icons/fa";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link} from "@nextui-org/react";
 
 function Education() {
   return (

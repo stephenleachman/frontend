@@ -1,15 +1,12 @@
-"use client"
-
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image'
-// import { ThemeToggler } from '@/components'
+import { ThemeToggler } from '@/app/_global_components'
 import { FaChevronCircleDown  } from "react-icons/fa";
 import Link from 'next/link';
 import { homePageSectionLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import HeroImage from '@/../public/images/mainMenuIcons/heroImage33.png';
-// import LinkButton from '@/components/ui/LinkButton';
-// import { motion } from "framer-motion"
+import { ButtonThemed } from '@/app/_global_components/ButtonThemed';
 
 function Hero() {
 
@@ -31,7 +28,7 @@ function Hero() {
               </Link>
             ))}
           </div>
-          {/* <ThemeToggler /> */}
+          <ThemeToggler />
         </div>
         
         <div className="tall:h-screen grid grid-cols-2 gap-1 content-center">
@@ -41,7 +38,7 @@ function Hero() {
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
             </div>
             <h1 className="text-custom-dark-2 dark:text-gray-50 text-7xl tracking-wide">Stephen Leachman</h1>
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
+            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A <span className="bg-gradient-to-br from-custom-blue to-custom-green bg-clip-text text-transparent">
               <TypeAnimation
                 sequence={[
                   'UI/UX Designer',
@@ -64,12 +61,17 @@ function Hero() {
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
             </p>
-            {/* <div>
-            <LinkButton
-              path="/projects"
-              title="My Services"
-            />
-            </div> */}
+            <div>
+              <ButtonThemed 
+                color="gradiant" 
+                size="lg"
+                as={Link}
+                radius="sm"
+                href="/services"
+                >
+                  My Services
+              </ButtonThemed>
+            </div>
           </div>
           <div className="justify-self-end ">
             <Image
