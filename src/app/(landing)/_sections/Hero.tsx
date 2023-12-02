@@ -1,3 +1,4 @@
+'use client'
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image'
 import { ThemeToggler } from '@/app/_global_components'
@@ -38,7 +39,7 @@ function Hero() {
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
             </div>
             <h1 className="text-custom-dark-2 dark:text-gray-50 text-7xl tracking-wide">Stephen Leachman</h1>
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A <span className="bg-gradient-to-br from-custom-blue to-custom-green bg-clip-text text-transparent">
+            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
               <TypeAnimation
                 sequence={[
                   'UI/UX Designer',

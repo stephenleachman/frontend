@@ -1,3 +1,4 @@
+'use client'
 import { extendVariants, Button } from "@nextui-org/react";
 
 export const ButtonThemed = extendVariants(Button, {

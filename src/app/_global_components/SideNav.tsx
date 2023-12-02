@@ -16,9 +16,7 @@ function SideNav() {
   const pathname = usePathname();
 
   return (
-    
     <header>
-   
       <div className="h-screen bg-custom-gray dark:bg-custom-dark-2 sticky top-0" >
       <div className="h-full w-[4px] absolute bg-white dark:bg-custom-dark-1 right-0"></div>
         <ScrollShadow hideScrollBar>

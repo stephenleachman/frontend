@@ -1,4 +1,3 @@
-
 async function fetchAboutMe() {
     const options ={
       headers: {
