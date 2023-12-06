@@ -6,7 +6,7 @@ import { FaChevronCircleDown  } from "react-icons/fa";
 import Link from 'next/link';
 import { homePageSectionLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
-import HeroImage from '@/../public/images/mainMenuIcons/heroImage33.png';
+import HeroImage from '@/../public/images/hero_image-10.png';
 import { ButtonThemed } from '@/app/_global_components/ButtonThemed';
 
 function Hero() {
@@ -78,8 +78,8 @@ function Hero() {
             <Image
               src={HeroImage}
               alt="hero image of Stephen Leachman"
-              height={800}
-              width={800}
+              height={1000}
+              width={1000}
               priority
               className="object-cover h-[800px] w-full mb-[100px]"
             >
