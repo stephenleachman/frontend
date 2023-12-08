@@ -1,9 +1,7 @@
 // 'use client'
-import { About, Education, FeaturedPosts, FeaturedProjects, Hero, Work } from '@/app/(landing)/_sections/index'
-import { FaChevronCircleDown  } from "react-icons/fa";
-import Link from 'next/link';
-// import { ThemeProvider } from 'next-themes';
-// import {NextUIProvider} from "@nextui-org/system";
+import { About, Education, FeaturedPosts, RecentProjects, Hero, Work, } from '@/app/(landing)/_sections/index'
+
+
 
 export default function Home() {
 
@@ -22,7 +20,7 @@ export default function Home() {
           <Work />
         </section>
         <section id="projects" className="px-4 md:px-10 bg-custom-gray-1 dark:bg-custom-dark-4 relative border-b-[3px] border-white dark:border-custom-dark-1">
-          <FeaturedProjects />
+          <RecentProjects />
         </section>
         <section id="blog" className="h-[1500px]">
           <FeaturedPosts />

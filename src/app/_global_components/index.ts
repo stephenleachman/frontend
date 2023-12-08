@@ -3,7 +3,10 @@ import BottomNav from './BottomNav';
 import Footer from './Footer';
 import ThemeToggler from './ThemeToggler';
 import Providers from './Providers';
-
+import ProjectModal from './(projectComponents)/ProjectModal';
+import { ButtonThemed } from './ButtonThemed';
+import ProjectComponents from './ProjectComponents';
+import ProjectCard from './(projectComponents)/ProjectCard';
 
 export {
     SideNav,
@@ -11,4 +14,8 @@ export {
     BottomNav,
     ThemeToggler,
     Providers,
+    ProjectModal,
+    ButtonThemed,
+    ProjectComponents,
+    ProjectCard,
 }

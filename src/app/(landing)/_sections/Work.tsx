@@ -19,7 +19,7 @@ function Work() {
             <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded  text-custom-dark-3 font-semibold inline-block my-5">
               B2B Services
             </h3>
-            <p className="leading-relaxed dark:text-custom-dark-text mb-5">
+            <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
@@ -53,7 +53,7 @@ function Work() {
             <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-custom-dark-3 font-semibold inline-block my-5">
               Web Designer & Developer
             </h3>
-            <p className="leading-relaxed dark:text-custom-dark-text mb-5">
+            <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
@@ -86,7 +86,7 @@ function Work() {
             <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-custom-dark-3 font-semibold inline-block my-5">
               Stocks & Options
             </h3>
-            <p className="leading-relaxed dark:text-custom-dark-text mb-5">
+            <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
               ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,

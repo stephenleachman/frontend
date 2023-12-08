@@ -12,7 +12,7 @@ function Education() {
       <div className="container grid z-10 py-24">
         <h2 className="text-center text-5xl	dark:text-gray-50 text-custom-dark-2 tracking-wide">My Education</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-custom-blue to-custom-green rounded justify-self-center my-8"></div>
-        <p className="max-w-2xl	justify-self-center text-center leading-relaxed dark:text-custom-dark-text">
+        <p className="max-w-2xl	justify-self-center text-center leading-relaxed text-custom-dark-1 dark:text-custom-dark-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
           ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
         </p>
