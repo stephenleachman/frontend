@@ -5,8 +5,9 @@ import ThemeToggler from './ThemeToggler';
 import Providers from './Providers';
 import ProjectModal from './(projectComponents)/ProjectModal';
 import { ButtonThemed } from './ButtonThemed';
-import ProjectComponents from './ProjectComponents';
+
 import ProjectCard from './(projectComponents)/ProjectCard';
+import SideNavThemeToggler from './SideNavThemeToggler';
 
 export {
     SideNav,
@@ -16,6 +17,6 @@ export {
     Providers,
     ProjectModal,
     ButtonThemed,
-    ProjectComponents,
     ProjectCard,
+    SideNavThemeToggler,
 }

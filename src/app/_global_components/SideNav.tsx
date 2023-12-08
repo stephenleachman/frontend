@@ -10,6 +10,7 @@ import {ScrollShadow} from "@nextui-org/react";
 import { usePathname } from 'next/navigation';
 import { mainNavLinks, socialLinks } from '@/constants';
 import { FaRegHandshake } from "react-icons/fa";
+import { SideNavThemeToggler } from '.';
 
 function SideNav() {
 
@@ -61,6 +62,7 @@ function SideNav() {
             </nav>
             </div>
             <div className="mb-12">
+              <SideNavThemeToggler />
               <div className="grid justify-items-stretch">
                 <div className="h-0.5 bg-custom-gray-link w-2/4 justify-self-center my-5"></div>
               </div>

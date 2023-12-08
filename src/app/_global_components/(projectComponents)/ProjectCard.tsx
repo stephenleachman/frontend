@@ -9,7 +9,9 @@ export default function ProjectCard(props: any) {
 
   const truncateProjectDesc  = props.project.attributes.Overview.length > 200 ? 
   props.project.attributes.Overview.substring(0, 200) + "..." : props.project.attributes.Overview;
-  // console.log(props);
+
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
+
 
   return (
     <div key={props.project.id} id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col drop-shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2">
@@ -61,7 +63,7 @@ export default function ProjectCard(props: any) {
         <h5 className="text-lg leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.clients_name}</h5>
         <div className="flex mt-1 text-xs items-center font-normal">
           <FaRegCalendarAlt />
-          <h6 className="text-sm ml-2 mt-[2px]">{props.project.attributes.project_date}</h6>
+          <p className="text-sm ml-2 mt-[2px]">{new Date(props.project.attributes.project_date).toLocaleDateString('en-US', options)}</p>
         </div>
         </div>
       </div>
