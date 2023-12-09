@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegUser,FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 import { IoIosImages } from "react-icons/io";
-import { BsBriefcase, BsGraphUpArrow } from "react-icons/bs";
+import { BsGraphUpArrow } from "react-icons/bs";
 import { TiPen } from "react-icons/ti";
 import MenuImage from '@/../public/images/mainMenuIcons/NavLogo.svg';
-import {ScrollShadow} from "@nextui-org/react";
+import { ScrollShadow } from "@nextui-org/react";
 import { usePathname } from 'next/navigation';
 import { mainNavLinks, socialLinks } from '@/constants';
 import { FaRegHandshake } from "react-icons/fa";
@@ -42,8 +42,8 @@ function SideNav() {
                   href={item.url}
                   className={`${pathname === `${item.url}` ? ' dark:text-custom-blue text-sky-500 border-b-2	border-custom-blue' : ''}`}
                 >
-                  <div className={`text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 dark:hover:text-sky-500 transition ease delay-100 relative
-                    ${pathname === `${item.url}` ? ' text-sky-500 hover:text-sky-500 dark:text-sky-500' : ''}
+                  <div className={`text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-custom-dark-4 dark:hover:text-custom-gray transition ease delay-100 relative
+                    ${pathname === `${item.url}` ? ' text-custom-dark-4 hover:text-custom-dark-4 dark:hover:text-custom-gray dark:text-custom-gray' : ''}
                     `}>
                     <div className="py-4 grid justify-items-center font-medium	">
                       {/* <FaRegUser className="text-2xl mb-2"/> {item.title} <react-icons icon={item.iconName} /> */}

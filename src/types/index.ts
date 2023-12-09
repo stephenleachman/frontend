@@ -12,3 +12,9 @@ export interface LinkButton {
     path?: string;
 }
 
+export interface BadgeProps {
+    title: string;
+    classStyles?: string;
+    key?: number;
+    style?: any;
+}

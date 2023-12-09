@@ -29,13 +29,13 @@ export default function ProjectCard(props: any) {
         ))} 
       </div>
     <div id="cardBody" className="p-5">
-      <h3 className="text-2xl dark:text-custom-gray-1 text-custom-dark-2 font-semibold dark:font-normal text-center mb-5">
+      <h3 className="text-2xl dark:text-custom-gray-1 text-custom-dark-2 font-semibold dark:font-normal mb-5">
         {props.project.attributes.project_name}
       </h3>
-      <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text text-center font-normal	">
+      <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text font-normal	">
       {truncateProjectDesc}
       </p>
-      <div className="flex justify-center mt-5">
+      <div className="mt-5">
         <ButtonThemed 
           color="gray" 
           size="lg"

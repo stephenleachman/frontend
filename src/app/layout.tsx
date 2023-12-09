@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Footer, SideNav, Providers } from './_global_components';
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
           <div className="fixed">
             <SideNav />
           </div>
-          <div className="ml-[90px]">
+          <div className="ml-[90px] relative min-h-screen pb-[164px] sm:pb-[56px]">
             {children}
             <Footer />
           </div>
