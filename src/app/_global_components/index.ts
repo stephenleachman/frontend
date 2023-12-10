@@ -1,5 +1,5 @@
-import SideNav from './SideNav';
-import BottomNav from './BottomNav';
+import SideNav from './(navigation)/SideNav';
+import BottomNav from './(navigation)/BottomNav';
 import Footer from './Footer';
 import ThemeToggler from './ThemeToggler';
 import Providers from './Providers';
@@ -9,6 +9,7 @@ import BlogCard from './(blogComponenents)/BlogCard';
 import ProjectCard from './(projectComponents)/ProjectCard';
 import SideNavThemeToggler from './SideNavThemeToggler';
 import Badge from './Badge';
+
 
 export {
     SideNav,

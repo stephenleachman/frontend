@@ -1,12 +1,12 @@
 
   export const homePageSectionLinks = [
-    { title: "Home", url: "/"  },
-    { title: "About", url: "#about"  },
-    { title: "Education", url: "#education" },
-    { title: "Work", url: "#work", },
-    { title: "Projects", url: "#projects" },
-    { title: "Blog", url: "#blog" },
-    { title: "Contact", url: "#contact" },
+    { title: "Home", url: "home"  },
+    { title: "About", url: "about"  },
+    { title: "Education", url: "education" },
+    { title: "Work", url: "work", },
+    { title: "Projects", url: "projects" },
+    { title: "Blog", url: "blog" },
+    { title: "Contact", url: "contact" },
   ];
 
   export const mainNavLinks = [

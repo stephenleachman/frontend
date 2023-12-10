@@ -19,7 +19,7 @@ function Hero() {
       <div className="container z-10 relative">
         <div className="w-full flex justify-between absolute">
           <div className="py-7 left-0">
-            {homePageSectionLinks.map((item) => (
+            {/* {homePageSectionLinks.map((item) => (
               <Link 
                 key={item.title}
                 href={item.url}
@@ -27,7 +27,7 @@ function Hero() {
               >
                 {item.title}
               </Link>
-            ))}
+            ))} */}
           </div>
           <ThemeToggler />
         </div>
