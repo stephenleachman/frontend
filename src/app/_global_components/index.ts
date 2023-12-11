@@ -9,7 +9,8 @@ import BlogCard from './(blogComponenents)/BlogCard';
 import ProjectCard from './(projectComponents)/ProjectCard';
 import SideNavThemeToggler from './SideNavThemeToggler';
 import Badge from './Badge';
-
+import ContactSection from './ContactSection';
+import ContactForm from './ContactForm';
 
 export {
     SideNav,
@@ -23,4 +24,6 @@ export {
     SideNavThemeToggler,
     BlogCard,
     Badge,
+    ContactSection,
+    ContactForm,
 }

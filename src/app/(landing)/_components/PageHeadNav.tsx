@@ -10,6 +10,7 @@ export default function PageHeadNav() {
   const pathname = usePathname();
 
   return (
+    <div className="hidden lg:block">
     <div className="flex justify-center px-4 md:px-10">
       <div className="container">
       <div className="backdrop-blur-sm  bg-custom-gray-1/80 dark:bg-custom-dark-2/80 text-custom-dark-text dark:text-custom-gray-link z-30 fixed top-0 flex pt-4 px-8 rounded-b-md">
@@ -31,6 +32,7 @@ export default function PageHeadNav() {
         </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

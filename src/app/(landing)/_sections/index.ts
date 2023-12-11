@@ -4,6 +4,7 @@ import FeaturedPosts from "./FeturedPosts";
 import RecentProjects from "./RecentProjects";
 import Hero from "./Hero";
 import Work from "./Work";
+import HeroMobile from "./HeroMobile";
 
 export {
     About,
@@ -12,4 +13,5 @@ export {
     RecentProjects,
     Hero,
     Work,
+    HeroMobile,
 }

@@ -8,6 +8,7 @@ import { homePageSectionLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import HeroImage from '@/../public/images/hero_image-10.png';
 import { ButtonThemed } from '@/app/_global_components/ButtonThemed';
+import HeroImageMobile from '@/../public/images/mobile_hero_image.png';
 
 function Hero() {
 
@@ -33,7 +34,8 @@ function Hero() {
         </div>
         
         <div className="tall:h-screen grid grid-cols-2 gap-1 content-center">
-          <div className="grid place-content-center">
+     
+          <div className="grid place-content-center py-10">
             <div className="flex items-center">
               <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl mb-10 tracking-wide">Hey, I’m</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
@@ -74,14 +76,14 @@ function Hero() {
               </ButtonThemed>
             </div>
           </div>
-          <div className="justify-self-end ">
+          <div className="justify-self-end pl-10 self-center">
             <Image
               src={HeroImage}
               alt="hero image of Stephen Leachman"
               height={1000}
               width={1000}
               priority
-              className="object-cover h-[800px] w-full mb-[100px]"
+              className="object-cover max-h-[800px] w-full mb-[100px]"
             >
             </Image>
           </div>
