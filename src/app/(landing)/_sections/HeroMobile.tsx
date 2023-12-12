@@ -63,8 +63,11 @@ export default function HeroMobile() {
             <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-3"></div>
           </div>
           <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
-          <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
+          <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> 
+            A <p className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
             <TypeAnimation
+              preRenderFirstString={true}
+              cursor={true}
               sequence={[
                 'UI/UX Designer',
                 1000, 
@@ -77,12 +80,12 @@ export default function HeroMobile() {
                 'Trader',
                 1000
               ]}
-              wrapper="span"
+              wrapper="p"
               speed={50}
               style={{ fontSize: '1em', display: 'inline-block' }}
               repeat={Infinity}
             />
-          </span></h2>
+          </p></h2>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
           </p>
