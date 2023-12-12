@@ -65,7 +65,7 @@ export default function HeroMobile() {
           <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
           <div className="flex flex-row">
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> A </h2>
-            <h2 className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
+            <p className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
               <TypeAnimation
                 preRenderFirstString={true}
                 cursor={true}
@@ -86,7 +86,7 @@ export default function HeroMobile() {
                 style={{ fontSize: '1em', display: 'inline-block' }}
                 repeat={Infinity}
               />
-            </h2>
+            </p>
           </div>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
