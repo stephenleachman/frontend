@@ -21,7 +21,7 @@ export default function HeroMobile() {
             height={400}
             width={400}
             priority
-            className="object-cover w-[300px] "
+            className="object-cover w-[280px] "
           >
           </Image>
           </div>
