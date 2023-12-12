@@ -20,15 +20,6 @@ function Hero() {
       <div className="container z-10 relative">
         <div className="w-full flex justify-between absolute">
           <div className="py-7 left-0">
-            {/* {homePageSectionLinks.map((item) => (
-              <Link 
-                key={item.title}
-                href={item.url}
-                className={`text-custom-dark-1 dark:text-custom-dark-text mr-8 hover:text-sky-500 hover:dark:text-sky-500 font-medium	relative ${pathname === `${item.url}` ? ' dark:text-sky-500 text-sky-500 border-b-2	border-custom-blue' : ''}`}
-              >
-                {item.title}
-              </Link>
-            ))} */}
           </div>
           <ThemeToggler />
         </div>

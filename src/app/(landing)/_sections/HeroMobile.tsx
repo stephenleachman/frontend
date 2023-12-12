@@ -6,6 +6,8 @@ import { ButtonThemed } from "@/app/_global_components";
 import { TypeAnimation } from "react-type-animation";
 import Link from 'next/link';
 import { ThemeToggler } from "@/app/_global_components";
+import { socialLinks } from "@/constants";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 
 export default function HeroMobile() {
   return (
@@ -36,6 +38,21 @@ export default function HeroMobile() {
           <div className="absolute top-4 right-5 sm:hidden">
             <ThemeToggler />
           </div>
+          <div className="flex flex-col justify-center sm:justify-end gap-8 absolute left-5 bottom-5 sm:hidden">
+          {socialLinks.map((item) => (
+            <Link 
+              key={item.title}
+              href={item.url}
+              target="_blank"
+            >
+            <div className="py-2 text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 transition dark:hover:text-sky-500 ease delay-100 self-center"> 
+              {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl"/>}
+              {item.icon === 'FaInstagram' && <FaInstagram className="text-2xl"/>}
+              {item.icon === 'FaGithub' && <FaGithub className="text-2xl"/>}
+            </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
      <div className="flex justify-center h-3/5 dark:bg-custom-dark-4 w-full border-b-[3px] border-white dark:border-custom-dark-1 relative pb-10">
@@ -66,6 +83,9 @@ export default function HeroMobile() {
               repeat={Infinity}
             />
           </span></h2>
+          <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
+          </p>
           <div>
             <ButtonThemed 
               color="gradiant" 

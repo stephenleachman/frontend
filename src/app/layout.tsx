@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Footer, SideNav, Providers } from './_global_components';
+import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +25,9 @@ export default function RootLayout({
           <div className="sm:ml-[90px] relative min-h-screen pb-[164px] sm:pb-[56px]">
             {children}
             <Footer />
+          </div>
+          <div className=" sm:hidden">
+            <BottomNav />
           </div>
         </Providers>
       </body>
