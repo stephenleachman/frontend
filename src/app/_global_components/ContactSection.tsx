@@ -5,8 +5,8 @@ import { ContactForm } from '.';
 export default function ContactSection() {
 
   return (
-    <section id="contact" className="section px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-3 py-20 flex justify-center">
-      <div className="container">
+    <section id="contact" className="section px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-3 flex justify-center">
+      <div className="container py-16 md:py-24">
         <div className="flex flex-row mb-8">
           <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl tracking-wide">Contact Me</h2>
           <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center"></div>

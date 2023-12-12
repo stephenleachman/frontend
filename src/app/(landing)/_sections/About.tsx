@@ -22,7 +22,7 @@ async function fetchAboutMe() {
       
       <div className="flex justify-center">
           <div className="bg-gradient-to-b  from-custom-dark-2 via-custom-dark-3 to-custom-dark-4 absolute h-full w-full dark:block hidden z-0"></div>
-        <div className="container grid z-10 py-24">
+        <div className="container grid z-10 py-16 md:py-24">
           <h2 className="text-center text-5xl	dark:text-gray-50 text-custom-dark-2 tracking-wide">A Bit About Me</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-custom-blue to-custom-green rounded justify-self-center my-8"></div>
         

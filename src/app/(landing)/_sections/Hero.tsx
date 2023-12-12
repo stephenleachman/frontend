@@ -32,8 +32,12 @@ function Hero() {
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
             </div>
             <h1 className="text-custom-dark-2 dark:text-gray-50 text-7xl tracking-wide">Stephen Leachman</h1>
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
+                <div className="flex flex-row">
+            <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A </h2>
+            <h2 className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-10 text-4xl font-semibold tracking-wider ml-3">
               <TypeAnimation
+                preRenderFirstString={true}
+                cursor={true}
                 sequence={[
                   'UI/UX Designer',
                   1000, 
@@ -46,12 +50,13 @@ function Hero() {
                   'Trader',
                   1000
                 ]}
-                wrapper="span"
+                wrapper="p"
                 speed={50}
                 style={{ fontSize: '1em', display: 'inline-block' }}
                 repeat={Infinity}
               />
-            </span></h2>
+            </h2>
+          </div>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
             </p>
