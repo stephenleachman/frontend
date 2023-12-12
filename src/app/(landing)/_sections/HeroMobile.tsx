@@ -21,7 +21,7 @@ export default function HeroMobile() {
             height={400}
             width={400}
             priority
-            className="object-cover w-[250px]"
+            className="object-cover w-[300px] "
           >
           </Image>
           </div>
@@ -65,7 +65,7 @@ export default function HeroMobile() {
           <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
           <div className="flex flex-row">
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> A </h2>
-            <p className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
+            <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
               <TypeAnimation
                 preRenderFirstString={true}
                 cursor={true}
@@ -81,12 +81,12 @@ export default function HeroMobile() {
                   'Trader',
                   1000
                 ]}
-                wrapper="p"
+                wrapper="span"
                 speed={50}
                 style={{ fontSize: '1em', display: 'inline-block' }}
                 repeat={Infinity}
               />
-            </p>
+            </span>
           </div>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
