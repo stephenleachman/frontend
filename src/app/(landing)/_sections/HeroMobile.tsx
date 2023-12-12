@@ -11,7 +11,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 
 export default function HeroMobile() {
   return (
-    <div className="min-h-screen tall:h-screen">
+    <div className="" >
     <div className="flex justify-center h-2/5	 bg-custom-gray-1 dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
       <div className=" container relative flex justify-center">
         <div className="self-end h-400px">
@@ -35,7 +35,7 @@ export default function HeroMobile() {
             >
             </Image>
           </div>
-          <div className="absolute top-4 right-5 sm:hidden">
+          <div className="absolute top-4 right-5 md:hidden">
             <ThemeToggler />
           </div>
           <div className="flex flex-col justify-center sm:justify-end gap-8 absolute left-5 bottom-5 sm:hidden">
@@ -59,11 +59,11 @@ export default function HeroMobile() {
      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full z-0 dark:hidden"></div>
         <div className="container px-4 md:px-10 z-10">
           <div className="flex items-center mt-10">
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl mb-8 tracking-wide font-semibold	">Hey, I’m</h2>
-            <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-8"></div>
+            <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl mb-3 tracking-wide font-semibold	">Hey, I’m</h2>
+            <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-3"></div>
           </div>
           <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
-          <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-8 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
+          <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> A <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
                 'UI/UX Designer',
