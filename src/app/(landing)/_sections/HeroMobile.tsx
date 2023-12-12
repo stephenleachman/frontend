@@ -12,7 +12,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 export default function HeroMobile() {
   return (
     <div className="" >
-    <div className="flex justify-center h-2/5	 bg-custom-gray-1 dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
+    <div className="flex justify-center h-2/5	 bg-custom-gray dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
       <div className=" container relative flex justify-center">
         <div className="self-end h-400px">
         <Image
