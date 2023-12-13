@@ -3,7 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ButtonThemed } from '@/app/_global_components';
 import { FaRegCalendarAlt } from "react-icons/fa";
-import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './project_card_swiper.css';
+
+import { Pagination } from 'swiper/modules';
 
 export default function ProjectCard(props: any) {
 
@@ -12,21 +18,30 @@ export default function ProjectCard(props: any) {
 
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
-
   return (
     <div key={props.project.id} id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col drop-shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2">
       <div id="cardHeader" className="max-h-[300px] flex items-center relative overflow-hidden border-b border-gray-100 dark:border-custom-dark-2">
+      <Swiper
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="w-full max-h-[300px]"
+        >
         {props.project.attributes.projectCover.data.map((projectImage: any) => (  
-          <Image 
-            key={props.project.id} 
-            src={projectImage.attributes.url} 
-            alt={projectImage.attributes.alternativeText}     
-            height={300}
-            width={500}
-            className="cover w-full"
-          >
-          </Image>
-        ))} 
+          <SwiperSlide className="cursor-grab	" >
+            <Image 
+              key={props.project.id} 
+              src={projectImage.attributes.url} 
+              alt={projectImage.attributes.alternativeText}     
+              height={300}
+              width={500}
+              className="cover w-full"
+            >
+            </Image>
+          </SwiperSlide>
+        ))}
+        </Swiper> 
       </div>
     <div id="cardBody" className="p-5">
       <h3 className="text-2xl dark:text-custom-gray-1 text-custom-dark-2 font-semibold dark:font-normal mb-5">
