@@ -7,7 +7,7 @@ import { socialLinks } from '@/constants';
 function Footer() {
   return (
     <div className="px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-4 border-t-[3px] border-white dark:border-custom-dark-1 flex justify-center absolute w-full bottom-0">
-      <div className="container flex flex-col sm:flex-row sm:justify-between py-5 sm:py-4 gap-5 sm:gap-0">
+      <div className="container flex flex-col sm:flex-row sm:justify-between py-5 sm:py-4 gap-5 sm:gap-0 pb-[90px]">
         <Link 
           href={'/'}
           className="self-center"

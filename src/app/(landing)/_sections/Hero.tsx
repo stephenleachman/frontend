@@ -4,11 +4,9 @@ import Image from 'next/image'
 import { ThemeToggler } from '@/app/_global_components'
 import { FaChevronCircleDown  } from "react-icons/fa";
 import Link from 'next/link';
-import { homePageSectionLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import HeroImage from '@/../public/images/hero_image-10.png';
 import { ButtonThemed } from '@/app/_global_components/ButtonThemed';
-import HeroImageMobile from '@/../public/images/mobile_hero_image.png';
 
 function Hero() {
 
@@ -23,16 +21,14 @@ function Hero() {
           </div>
           <ThemeToggler />
         </div>
-        
         <div className="tall:h-screen grid grid-cols-2 gap-1 content-center">
-     
           <div className="grid place-content-center py-10">
             <div className="flex items-center">
               <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl mb-10 tracking-wide">Hey, I’m</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
             </div>
             <h1 className="text-custom-dark-2 dark:text-gray-50 text-7xl tracking-wide">Stephen Leachman</h1>
-                <div className="flex flex-row">
+            <div className="flex flex-row">
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl	my-10 font-semibold tracking-wider"> A </h2>
             <h2 className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-10 text-4xl font-semibold tracking-wider ml-3">
               <TypeAnimation

@@ -31,6 +31,7 @@ export default async function FetchSkills() {
   const Business = 'Business';
   const Trading = 'Trading & Investing';
 
+
   return (
     <div>
       <p className="leading-relaxed dark:text-custom-dark-text text-custom-dark-2 mb-2">
