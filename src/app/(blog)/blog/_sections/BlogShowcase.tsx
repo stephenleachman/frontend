@@ -27,13 +27,11 @@ async function BlogShowcase() {
 
   const Posts = await fetchblogs(); 
 
-
-  
   return (
     <>
     <div className="flex justify-center mt-7 lg:mt-0">
       <div className="container lg:hidden mb-[-35px]">
-        <FilterCard Posts={Posts}/>  
+        {/* <FilterCard Posts={Posts}/>   */}
       </div>
     </div>
       <div className="flex justify-center">
@@ -42,7 +40,7 @@ async function BlogShowcase() {
               {Posts && Posts.data.map((post: any) => ( <BlogCard key={post.id} post={post}/>))}
           </div>
           <div className="grid-col md:grid-cols-1 gap-8 hidden lg:grid">
-            <FilterCard Posts={Posts}/>    
+            {/* <FilterCard Posts={Posts}/>     */}
           </div>  
         </div>
       </div>
