@@ -15,7 +15,7 @@ export default function Hero() {
           >
           <Image
             src={logo}
-            alt="Hero Logo"
+            alt=""
             width={50}
             height={50}
             className="sm:hidden border-2 border-custom-dark-2 rounded-sm	"
@@ -30,7 +30,7 @@ export default function Hero() {
               <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl mb-5 md:mb-10 tracking-wide">Stephen Leachman</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-5 md:mb-10"></div>
             </div>
-            <h1 className="text-custom-dark-2 dark:text-custom-gray-1 text-5xl md:text-7xl tracking-wide">My Projects</h1>
+            <h1 className="text-custom-dark-2 dark:text-custom-gray-1 text-5xl md:text-7xl tracking-wide">My Blog</h1>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mt-5 md:mt-10 lg:pr-10 lg:max-w-[700px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis.
             </p>
