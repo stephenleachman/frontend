@@ -28,19 +28,22 @@ export default function ProjectCard(props: any) {
         modules={[Pagination]}
         className="w-full max-h-[300px]"
         >
+        <ul>
         {props.project.attributes.projectCover.data.map((projectImage: any) => (  
-          <SwiperSlide className="cursor-grab	" >
-            <Image 
-              key={props.project.id} 
-              src={projectImage.attributes.url} 
-              alt={projectImage.attributes.alternativeText}     
-              height={300}
-              width={500}
-              className="cover w-full"
-            >
-            </Image>
-          </SwiperSlide>
+          <li  key={props.project.id} >
+            <SwiperSlide className="cursor-grab" >
+              <Image 
+                src={projectImage.attributes.url} 
+                alt={projectImage.attributes.alternativeText}     
+                height={300}
+                width={500}
+                className="cover w-full"
+              >
+              </Image>
+            </SwiperSlide>
+          </li>
         ))}
+        </ul>
         </Swiper> 
       </div>
     <div id="cardBody" className="p-5">
