@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BlogCard } from "@/app/_global_components";
 import { FilterCard } from ".";
 

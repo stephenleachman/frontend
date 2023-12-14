@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ProjectCard, ProjectModal } from "@/app/_global_components";
+import { ProjectCard } from "@/app/_global_components";
 
 
 async function fetchProjects() {

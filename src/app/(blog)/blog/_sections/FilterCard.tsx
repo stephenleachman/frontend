@@ -28,25 +28,23 @@ export default function ProjectCard(props: any) {
             <h3 className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-sm font-normal mb-2 mt-5 border-b dark:border-custom-dark-1 border-custom-gray-text pb-2">
               Filter Categories 
             </h3>
-            <div className="flex flex-row">
-              
+            <ul className="flex flex-row gap-3 mt-2">
               {props.Posts.data.map((category: any) => (      
-                <>
+                <li key={category.id}>
                  {category.attributes.blog_categories.data.map((postCategories: any) => (  
                   <button 
-                    key={postCategories.id}
-                    // onClick={filter}
-                    > 
-                  <Badge 
-                    title={postCategories.attributes.category}
-                    style={{'background': postCategories.attributes.bg_hex_color, 'color': postCategories.attributes.text_hex_color}}
-                    classStyles="mr-3 mt-2"
-                  />
+                  // onClick={filter}
+                  key={postCategories.id}
+                  > 
+                    <Badge 
+                      title={postCategories.attributes.category}
+                      style={{'background': postCategories.attributes.bg_hex_color, 'color': postCategories.attributes.text_hex_color}}
+                    />
                   </button>
                  ))}
-                </>
+                </li>
               ))}
-            </div>
+            </ul>
         </div>
       </div>
     </div>
