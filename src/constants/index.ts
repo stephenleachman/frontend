@@ -10,7 +10,7 @@
   ];
 
   export const mainNavLinks = [
-    { title: "About", url: "/" , icon: "FaRegUser"},
+    { title: "Home", url: "/" , icon: "FaRegUser"},
     { title: "Services", url: "/services", icon: "FaRegHandshake"},
     { title: "Projects", url: "/projects" , icon: "IoIosImages"},
     { title: "Teading", url: "/trading", icon: "BsGraphUpArrow"},
