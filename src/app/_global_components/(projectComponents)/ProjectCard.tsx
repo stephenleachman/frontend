@@ -13,8 +13,8 @@ import { Pagination } from 'swiper/modules';
 
 export default function ProjectCard(props: any) {
 
-  const truncateProjectDesc  = props.project.attributes.Overview.length > 200 ? 
-  props.project.attributes.Overview.substring(0, 200) + "..." : props.project.attributes.Overview;
+  const truncateProjectDesc  = props.project.attributes.overvierw.length > 200 ? 
+  props.project.attributes.overvierw.substring(0, 200) + "..." : props.project.attributes.overvierw;
 
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
@@ -29,7 +29,7 @@ export default function ProjectCard(props: any) {
         className="w-full max-h-[300px]"
         >
         <ul>
-        {props.project.attributes.projectCover.data.map((projectImage: any) => (  
+        {props.project.attributes.project_cover.data.map((projectImage: any) => (  
           <li  key={props.project.id} >
             <SwiperSlide className="cursor-grab" >
               <Image 
@@ -78,10 +78,10 @@ export default function ProjectCard(props: any) {
         </Image>
       </div>
       <div className="ml-8 leading-relaxed dark:text-custom-dark-text text-custom-dark-2">
-        <h5 className="text-lg leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.clients_name}</h5>
+        <h5 className="text-lg leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.client_name}</h5>
         <div className="flex mt-1 text-xs items-center font-normal">
           <FaRegCalendarAlt />
-          <p className="text-sm ml-2 mt-[2px]">{new Date(props.project.attributes.project_date).toLocaleDateString('en-US', options)}</p>
+          <p className="text-sm ml-2 mt-[2px]">{new Date(props.project.attributes.project_data).toLocaleDateString('en-US', options)}</p>
         </div>
         </div>
       </div>
