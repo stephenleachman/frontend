@@ -58,7 +58,8 @@ export default function ProjectCard(props: any) {
           color="gray" 
           size="lg"
           radius="sm"
-          href={`/project/${props.project.attributes.slug}`}
+          // href={`/project/${props.project.attributes.slug}`}
+          href='/'
           as={Link}
           className="font-medium dark:text-custom-gray-1 text-custom-dark-2"
           >
