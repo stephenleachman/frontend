@@ -27,7 +27,7 @@ async function fetchAboutMe() {
           <div className="h-1 w-20 bg-gradient-to-r from-custom-blue to-custom-green rounded justify-self-center my-8"></div>
         
           <div className="flex justify-center">
-          <ul className="max-w-[1000px] mt-10">
+          <ul className="max-w-[1000px] mt-0">
   
   
             {aboutMe?.data?.map((item: any) => (
