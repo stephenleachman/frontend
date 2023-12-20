@@ -39,7 +39,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Development && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow	">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
@@ -66,7 +66,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Marketing && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow-md">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
@@ -93,7 +93,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Business && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow-md	">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
@@ -120,7 +120,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Trading && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow	">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow-md	">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
