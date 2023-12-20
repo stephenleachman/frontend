@@ -52,9 +52,9 @@ export default async function FetchSkills() {
             </div>
             <div className="p-2 grid content-center">
               <h4 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide ml-3 mr-6">{item.attributes.skill_type}</h4>
-              <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
+              {/* <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
                 <FaExternalLinkAlt />
-              </div>
+              </div> */}
             </div>
           </div>
         )
@@ -66,7 +66,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Marketing && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow	">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row shadow-md">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
@@ -79,9 +79,9 @@ export default async function FetchSkills() {
             </div>
             <div className="p-2 grid content-center">
               <h4 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide ml-3 mr-6">{item.attributes.skill_type}</h4>
-              <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
+              {/* <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
                 <FaExternalLinkAlt />
-              </div>
+              </div> */}
             </div>
           </div>
         )
@@ -93,7 +93,7 @@ export default async function FetchSkills() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"> 
         {Skills?.data?.map((item: any) => ( item.attributes.skill_category === Business && (
-            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow	">
+            <div key={item.id} className="rounded-md h-20 max-w-full bg-white font-semibold	 dark:bg-custom-dark-2 overflow-hidden relative flex flex-row drop-shadow-md	">
             <div  className="relative h-full w-20">
               <Image 
                 src={item.attributes.skill_icon.data.attributes.url}
@@ -106,9 +106,9 @@ export default async function FetchSkills() {
             </div>
             <div className="p-2 grid content-center">
               <h4 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide ml-3 mr-6">{item.attributes.skill_type}</h4>
-              <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
+              {/* <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
                 <FaExternalLinkAlt />
-              </div>
+              </div> */}
             </div>
           </div>
         )
@@ -133,9 +133,9 @@ export default async function FetchSkills() {
             </div>
             <div className="p-2 grid content-center">
               <h4 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide ml-3 mr-6">{item.attributes.skill_type}</h4>
-              <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
+              {/* <div className="dark:text-custom-dark-text text-custom-gray-link top-3 2 right-3 absolute">
                 <FaExternalLinkAlt />
-              </div>
+              </div> */}
             </div>
           </div>
         )
