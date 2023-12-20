@@ -17,7 +17,7 @@ export default function ContactSection() {
               src={ContactImage}
               alt="Stephens Image"
               height={200}
-              width={150}
+              width={180}
             > 
             </Image>
           </div>

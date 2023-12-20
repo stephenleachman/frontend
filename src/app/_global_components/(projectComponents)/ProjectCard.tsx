@@ -35,7 +35,7 @@ export default function ProjectCard(props: any) {
               <Image 
                 src={projectImage.attributes.url} 
                 alt={projectImage.attributes.alternativeText}     
-                height={300}
+                height={270}
                 width={500}
                 className="cover w-full"
               >
@@ -78,7 +78,7 @@ export default function ProjectCard(props: any) {
         </Image>
       </div>
       <div className="ml-8 leading-relaxed dark:text-custom-dark-text text-custom-dark-2">
-        <h5 className="text-lg leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.client_name}</h5>
+        <h5 className="text-lg font-normal leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.client_name}</h5>
         <div className="flex mt-1 text-xs items-center font-normal">
           <FaRegCalendarAlt />
           <p className="text-sm ml-2 mt-[2px]">{new Date(props.project.attributes.project_data).toLocaleDateString('en-US', options)}</p>

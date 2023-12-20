@@ -1,6 +1,7 @@
 import React from 'react'
+import { ProjectPageHero } from '../../_components';
 
-async function fetchProject(slug: string) {
+async function fetchProject(slug: any) {
     const options ={
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
@@ -27,9 +28,12 @@ const projectPage = async ({params}: any) => {
     const project = await fetchProject(params.slug)
     // console.log(project);
   return (
-    <div>
-      <h1>{project.data.attributes.project_name}</h1>
-    </div>
+    <main className="overflow-hidden bg-custom-gray-1 dark:bg-custom-dark-3">
+      <section id="home" className="px-4 md:px-10 flex justify-center pb-5">
+        <ProjectPageHero project={project}/>
+      </section>
+      {/* <h1>{project.data.attributes.project_name}</h1> */}
+    </main>
   )
 }
 export default projectPage;

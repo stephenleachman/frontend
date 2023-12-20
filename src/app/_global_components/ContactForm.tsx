@@ -45,7 +45,7 @@ export default function ContactForm() {
             label="Description"
             classNames={{
               base: "w-full",
-              input: "h-[80px]",
+              input: "h-[100px]",
               inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2"
             }}
             variant="faded"
