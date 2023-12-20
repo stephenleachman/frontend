@@ -11,7 +11,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 export default function ProjectPageHero(project: any) {
     // console.log(project.project)
   return (
-    <div className="container rounded-xl drop-shadow  ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 xl:bg-slate-200 xl:dark:bg-custom-dark-4 mt-5 overflow-hidden">
+    <div className="container rounded-xl shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 xl:bg-slate-200 xl:dark:bg-custom-dark-4 mt-5 overflow-hidden">
       <Swiper
       pagination={{
         clickable: true,

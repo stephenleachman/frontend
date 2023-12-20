@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 
 export default function ContactForm() {
   return (
-    <div id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col drop-shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 mb-16">
+    <div id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 mb-16">
       <div id="cardBody" className="p-5">
         <form className="font-normal dark:text-custom-dark-text text-custom-dark-1">
           <h4 className="text-custom-dark-2 dark:text-gray-50 text-lg tracking-wide">Sent Me An Email</h4>
