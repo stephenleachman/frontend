@@ -14,6 +14,7 @@ function BottomNav() {
 
   return (
     <div className="w-full bottom-0 bg-custom-gray dark:bg-custom-dark-2 fixed z-50">
+      <div className="w-full h-[4px] absolute bg-white dark:bg-custom-dark-1 top-0"></div>
       <nav className="grid grid-cols-5">
         {mainNavLinks.map((item) => (
           <Link 
@@ -21,8 +22,8 @@ function BottomNav() {
             href={item.url}
             className={`${pathname === `${item.url}` ? ' dark:text-custom-blue text-sky-500' : ''}`}
           >
-            <div className={`text-xs flex flex-row justify-center text-custom-gray-link dark:text-custom-dark-text hover:text-custom-blue dark:hover:text-custom-blue transition ease delay-100 relative
-              ${pathname === `${item.url}` ? 'text-sky-400 hover:text-custom-blue dark:hover:text-custom-blue dark:text-sky-400' : ''}
+            <div className={`text-xs flex flex-row justify-center text-custom-gray-link dark:text-custom-dark-text transition ease delay-100 relative
+              ${pathname === `${item.url}` ? 'text-sky-400 dark:text-sky-400' : ''}
               `}>
               <div className="py-4 grid font-medium justify-items-center z-30">
                 {/* <FaRegUser className="text-2xl mb-2"/> {item.title} <react-icons icon={item.iconName} /> */}
