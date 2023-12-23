@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import './swiper.css';
+import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper/modules';
 import { FaGithub, FaLongArrowAltLeft, FaLongArrowAltRight, FaRegCalendarAlt } from 'react-icons/fa';
 import { ButtonThemed } from '@/app/_global_components';
@@ -69,6 +69,7 @@ export default function ProjectPageHero(project: any) {
       spaceBetween={30}
       modules={[Pagination, Navigation]}
       navigation={true}
+     
       className="md:rounded-lg dark:bg-custom-dark-3"
       >
       <ul className="rounded-lg overflow-hidden">

@@ -20,44 +20,41 @@
     height: 100%;
     object-fit: cover;
   } */
-  .swiper-wrapper {
-    position: relative;
-  }
   .swiper-button-prev {
-    font-size: 1px;
-    color: #18BFFF;
-    background-color: #CBEAF8;
-    border-radius: 10%;
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
-    margin-bottom: -300px;
+    font-size: 1px !important;
+    color: #18BFFF !important;
+    background-color: #CBEAF8 !important;
+    border-radius: 10% !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin-left: 20px !important;
+    margin-bottom: -300px !important;
   }
   .swiper-button-prev::after {
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 20px !important;
+    font-weight: 900 !important;
   }
   .swiper-button-next {
-    font-size: 1px;
-    color: #18BFFF;
-    background-color: #CBEAF8;
-    border-radius: 10%;
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
+    font-size: 1px !important;
+    color: #18BFFF !important;
+    background-color: #CBEAF8 !important;
+    border-radius: 10% !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin-right: 20px !important;
   }
   .swiper-button-next::after {
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 20px !important;
+    font-weight: 900 !important;
   }
   @media only screen and (max-width: 850px) {
     .swiper-button-next { 
-      display: none;
+      display: none !important;
     }
     .swiper-button-prev { 
-      display: none;
+      display: none !important;
     }
   } 
   .swiper-pagination {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
   }
