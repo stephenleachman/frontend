@@ -17,7 +17,7 @@ export default function ProjectPageProjectType(project: any) {
         >
         </Image>
         <div className="ml-5">
-          <h5 className="text-xs font-semibold uppercase text-emerald-600 bg-emerald-100 rounded-md inline-block py-1 px-3">
+          <h5 className="text-xs font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3">
             {project.project.data.attributes.project_type}  
           </h5>
           <h4 className="text-xl font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50 my-2">

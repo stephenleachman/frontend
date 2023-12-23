@@ -22,7 +22,7 @@ const config: Config = {
         'custom-gray-link': '#64748B',
         'custom-blue-opacaty': '#CBEAF8',
         'custom-blue': '#18BFFF',
-        'custom-green': '#2CD673',
+        'custom-green': '#9333ea',
         'custom-dark-1': '#4B5563',
         'custom-dark-2': '#374151',
         'custom-dark-3': '#1F2A37',

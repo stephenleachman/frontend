@@ -41,7 +41,7 @@ const projectPage = async ({params}: any) => {
             </div>
             <div className="lg:min-w-[350px] xl:min-w-[400px] gap-5 flex-col hidden lg:flex">
               <ProjectPageProjectType project={project}/>
-              <ProjectPageProjectView project={project}/>
+              {/* <ProjectPageProjectView project={project}/> */}
               <ProjectPageShare project={project}/>
             </div>
           </div>
