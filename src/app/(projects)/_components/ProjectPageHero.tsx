@@ -14,7 +14,7 @@ import Link from 'next/link';
 export default function ProjectPageHero(project: any) {
 
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
-  const swiper = useSwiper();
+
 
   return (
     <div className="container rounded-xl shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 mt-5  flex flex-col-reverse xl:flex-row p-5  gap-10 xl:gap-16 overflow-hidden">
