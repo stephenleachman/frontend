@@ -24,7 +24,7 @@ function Hero() {
         <div className="tall:h-screen grid grid-cols-2 gap-1 content-center">
           <div className="grid place-content-center py-10">
             <div className="flex items-center">
-              <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl mb-10 tracking-wide">Hey, I’m</h2>
+              <h2 className="text-custom-dark-2 md:dark:text-gray-50 text-4xl mb-10 tracking-wide">Hey, I’m</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-10"></div>
             </div>
             <h1 className="text-custom-dark-2 dark:text-gray-50 text-7xl tracking-wide">Stephen Leachman</h1>

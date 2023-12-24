@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectPageDetails, ProjectPageHero, ProjectPageProjectType, ProjectPageProjectView, ProjectPageShare } from '../../_components';
+import { Header, ProjectPageDetails, ProjectPageHero, ProjectPageProjectType, ProjectPageProjectView, ProjectPageShare } from '../../_components';
 import { ContactSection } from '@/app/_global_components';
 
 async function fetchProject(slug: any) {
@@ -26,11 +26,11 @@ async function fetchProject(slug: any) {
 
 const projectPage = async ({params}: any) => {
 
-    const project = await fetchProject(params.slug)
-    // console.log(project);
+  const project = await fetchProject(params.slug)
+
   return (
     <main className="overflow-hidden bg-custom-gray dark:bg-custom-dark-4">
-      <section id="home" className="px-4 md:px-10 flex justify-center pb-5">
+      <section id="home" className="px-0 sm:px-4 md:px-10 flex justify-center pb-5">
         <ProjectPageHero project={project}/>
       </section>
       <section id="Details" className="px-4 md:px-10 flex justify-center pb-10">

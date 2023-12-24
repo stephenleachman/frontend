@@ -59,12 +59,12 @@ export default function HeroMobile() {
      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full z-0 dark:hidden"></div>
         <div className="container px-4 md:px-10 z-10">
           <div className="flex items-center mt-10">
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl mb-3 tracking-wide font-semibold	">Hey, I’m</h2>
+            <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl mb-3 tracking-wide font-semibold	">Hey, I’m</h2>
             <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-3"></div>
           </div>
           <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
           <div className="flex flex-row">
-            <h2 className="text-custom-dark-2 dark:text-gray-50 text-3xl	my-5 font-semibold tracking-wider"> A </h2>
+            <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl	my-5 font-semibold tracking-wider"> A </h2>
             <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
               <TypeAnimation
                 preRenderFirstString={true}

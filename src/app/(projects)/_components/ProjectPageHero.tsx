@@ -14,7 +14,7 @@ export default function ProjectPageHero(project: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div className="container rounded-xl shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 mt-5  flex flex-col-reverse xl:flex-row p-5  gap-10 xl:gap-16 overflow-hidden">
+    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden">
       <div className="xl:w-2/4 flex flex-col justify-between">
         <div>
           <h5 className="text-sm font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3 mb-5">
@@ -34,7 +34,8 @@ export default function ProjectPageHero(project: any) {
             </span>
           </div>
         </div>
-        <div className="flex flex-row mt-5">
+        <div className="flex flex-col-reverse sm:flex-row mt-5 flex-re">
+          <div>
           <ButtonThemed 
             color="gradiant" 
             size="lg"
@@ -45,7 +46,8 @@ export default function ProjectPageHero(project: any) {
             >
               View Live Project
           </ButtonThemed>
-          <Link className="flex mt-1 text-normal items-center font-semibold text-custom-gray-link dark:text-custom-dark-text dark:hover:text-custom-blue hover:text-custom-blue transition ease delay-100 ml-5 md:ml-10" 
+          </div>
+          <Link className="flex mt-1 text-normal items-center font-semibold text-custom-gray-link dark:text-custom-dark-text dark:hover:text-custom-blue hover:text-custom-blue transition ease delay-100 sm:ml-5 md:ml-10 mb-5 sm:mb-0" 
           href={project.project.data.attributes.project_github_link}
           target="_blank"
           >  
@@ -66,7 +68,7 @@ export default function ProjectPageHero(project: any) {
       spaceBetween={30}
       modules={[Pagination, Navigation]}
       navigation={true}
-      className="md:rounded-lg dark:bg-custom-dark-3"
+      className="md:rounded-lg dark:bg-custom-dark-3 border-b-2 border-custom-dark-1 sm:border-b-0"
       >
       <ul className="rounded-lg overflow-hidden">
         {project.project.data.attributes.project_cover.data.map((projectImage: any) => (  
@@ -77,7 +79,7 @@ export default function ProjectPageHero(project: any) {
                   alt={projectImage.attributes.alternativeText}     
                   height={487}
                   width={1000}
-                  className="object-cover select-none xl:h-[450px] rounded-lg"
+                  className="object-cover select-none xl:h-[450px] sm:rounded-lg"
                 >
                 </Image>
             </SwiperSlide>

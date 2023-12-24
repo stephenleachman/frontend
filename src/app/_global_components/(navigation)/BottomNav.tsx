@@ -34,7 +34,7 @@ function BottomNav() {
                 {item.icon === 'BsGraphUpArrow' && <BsGraphUpArrow className="text-2xl mb-2"/>}
                 {item.title}
               </div>
-              <div className={`${pathname === `${item.url}` ? 'w-full h-[4px] bg-gradient-to-b from-custom-blue to-custom-green absolute top-0 left-0 mr-[-4px] z-50' : ''}`}></div>
+              <div className={`${pathname === `${item.url}` ? 'w-full h-[4px] bg-gradient-to-r from-custom-blue to-custom-green absolute top-0 left-0 mr-[-4px] z-50' : ''}`}></div>
               <div className={`${pathname === `${item.url}` ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
             </div>
           </Link>

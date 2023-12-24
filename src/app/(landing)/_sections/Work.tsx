@@ -16,7 +16,7 @@ function Work() {
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl tracking-wide">
               Business Owner
             </h2>
-            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded  text-custom-dark-3 font-semibold inline-block my-5">
+            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded  text-white font-medium inline-block my-5">
               B2B Services
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
@@ -50,7 +50,7 @@ function Work() {
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl tracking-wide">
               Freelancer
             </h2>
-            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-custom-dark-3 font-semibold inline-block my-5">
+            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-white font-medium inline-block my-5">
               Web Designer & Developer
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
@@ -83,7 +83,7 @@ function Work() {
             <h2 className="text-custom-dark-2 dark:text-gray-50 text-4xl tracking-wide">
               Trader
             </h2>
-            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-custom-dark-3 font-semibold inline-block my-5">
+            <h3 className="py-1 px-3 bg-gradient-to-r from-custom-blue to-custom-green rounded text-white font-medium inline-block my-5">
               Stocks & Options
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
