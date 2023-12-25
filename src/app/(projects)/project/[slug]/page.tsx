@@ -2,6 +2,7 @@ import React from 'react'
 import { Header, ProjectPageDetails, ProjectPageHero, ProjectPageProjectType, ProjectPageProjectView, ProjectPageShare } from '../../_components';
 import { ContactSection } from '@/app/_global_components';
 
+
 async function fetchProject(slug: any) {
     const options ={
       headers: {
@@ -30,10 +31,10 @@ const projectPage = async ({params}: any) => {
 
   return (
     <main className="overflow-hidden bg-custom-gray dark:bg-custom-dark-4">
-      <section id="home" className="px-0 sm:px-4 md:px-10 flex justify-center pb-5">
+      <section id="home" className="px-0 sm:px-4 md:px-10 flex justify-center sm:pb-5">
         <ProjectPageHero project={project}/>
       </section>
-      <section id="Details" className="px-4 md:px-10 flex justify-center pb-10">
+      <section id="Details" className="sm:px-4 md:px-10 flex justify-center sm:pb-10">
         <div className="container">
           <div className="flex gap-5">
             <div className="flex-auto w-full">

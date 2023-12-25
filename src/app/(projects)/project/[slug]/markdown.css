@@ -1,0 +1,90 @@
+.markdown h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom:  1.25rem; 
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(136 153 168 / var(--tw-text-opacity));   
+}
+.dark .markdown h1 {
+    --tw-text-opacity: 1;
+    color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    margin-bottom:  1.25rem; 
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+    border-left: 4px solid #18BFFF;
+    padding-left: 20px;
+}
+.dark .markdown h2 {
+    --tw-text-opacity: 1;
+    color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown h3 {
+    font-size: 1.70rem;
+    line-height: 2.25rem;
+    margin-bottom:  1.25rem; 
+    margin-top: 2.50rem;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown h3 {
+    --tw-text-opacity: 1;
+    color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom:  1.25rem;
+    margin-top: 1.25rem;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown h4 {
+    --tw-text-opacity: 1;
+    color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown p {
+    font-size: 1.03rem;
+    line-height: 1.75rem;
+    margin-bottom:  2.25rem;
+    letter-spacing: 0.05em;
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown p {
+    --tw-text-opacity: 1;
+    color: rgb(136 153 168 / var(--tw-text-opacity));   
+}
+
+.markdown img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.markdown ul { 
+    margin-bottom: 1.25rem;
+}
+.markdown ul li { 
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-top: 0.4rem;
+}
+.markdown a { 
+    --tw-text-opacity: 1;
+    color: #12b6f7;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.markdown a:hover { 
+    opacity: 70%;
+    transition: ease 500ms;
+}

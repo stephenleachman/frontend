@@ -14,7 +14,7 @@ export default function ProjectPageHero(project: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden">
+    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-16 sm:pb-5">
       <div className="xl:w-2/4 flex flex-col justify-between">
         <div>
           <h5 className="text-sm font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3 mb-5">

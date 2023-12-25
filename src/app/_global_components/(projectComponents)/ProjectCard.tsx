@@ -26,6 +26,7 @@ export default function ProjectCard(props: any) {
           clickable: true,
         }}
         modules={[Pagination]}
+        spaceBetween={30}
         className="w-full max-h-[300px]"
         >
         <ul>
