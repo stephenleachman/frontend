@@ -11,7 +11,7 @@ export default function ProjectPageDetails(project: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div id="card" className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 pb-5 sm:py-5" >
+    <div id="card" className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 pb-5 sm:py-5" >
         <div className="flex flex-row mb-10 lg:hidden">
         <Image 
           src={project.project.data.attributes.avatar.data.attributes.formats.small.url} 

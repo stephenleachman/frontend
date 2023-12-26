@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function ProjectPageHero(project: any) {
 
-  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
+  // const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
     <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-10 sm:pb-5">
@@ -27,14 +27,14 @@ export default function ProjectPageHero(project: any) {
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg	">
             {project.project.data.attributes.overvierw}
           </p>
-          <div className="flex text-xs items-center font-normal text-custom-dark-2 dark:text-custom-dark-text mt-5">
+          {/* <div className="flex text-xs items-center font-normal text-custom-dark-2 dark:text-custom-dark-text mt-5">
             <FaRegCalendarAlt />
             <span className="text-sm ml-2 my-1">
               {new Date(project.project.data.attributes.project_data).toLocaleDateString('en-US', options)} 
             </span>
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-col-reverse sm:flex-row mt-5 flex-re">
+        <div className="flex flex-col-reverse sm:flex-row mt-10 flex-re">
           <div>
           <ButtonThemed 
             color="gradiant" 
