@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Comfortaa } from 'next/font/google'
 import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Comfortaa({
+  subsets: ['latin'],
+  weight: [ '300', '400', '500', '600', '700', ]
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{scrollBehavior:'smooth'}}>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Providers>
           <div className="fixed hidden sm:block">
             <SideNav />
