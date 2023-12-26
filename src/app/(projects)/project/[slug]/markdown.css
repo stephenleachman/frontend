@@ -52,7 +52,6 @@
     color: rgb(249 250 251 / var(--tw-text-opacity));  
 }
 .markdown p {
-    font-size: 1.03rem;
     line-height: 1.75rem;
     margin-bottom:  2.25rem;
     letter-spacing: 0.05em;
