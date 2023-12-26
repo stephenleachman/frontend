@@ -34,7 +34,7 @@ const projectPage = async ({params}: any) => {
       <section id="home" className="px-0 sm:px-4 md:px-10 flex justify-center sm:pb-5">
         <ProjectPageHero project={project}/>
       </section>
-      <section id="Details" className="sm:px-4 md:px-10 flex justify-center sm:pb-10">
+      <section id="Details" className="sm:px-4 md:px-10 flex justify-center sm:pb-10 border-y-[3px] border-custom-gray-1 dark:border-custom-dark-1 sm:border-none">
         <div className="container">
           <div className="flex gap-5">
             <div className="flex-auto w-full">
