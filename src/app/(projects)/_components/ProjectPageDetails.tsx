@@ -2,13 +2,16 @@ import '../project/[slug]/markdown.css';
 import Markdown from 'react-markdown'
 import Image from 'next/image';
 import { FaRegCalendarAlt } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaFacebook, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+import { ButtonThemed } from '@/app/_global_components';
 
 export default function ProjectPageDetails(project: any) {
 
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div id="card" className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 pb-16 sm:py-5" >
+    <div id="card" className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 pb-5 sm:py-5" >
         <div className="flex flex-row mb-10 lg:hidden">
         <Image 
           src={project.project.data.attributes.avatar.data.attributes.formats.small.url} 
@@ -45,6 +48,36 @@ export default function ProjectPageDetails(project: any) {
           </li>
         ))}
       </ul>
+      <div className="mt-5 pt-5 lg:hidden border-t border-custom-dark-link dark:border-custom-dark-1">
+        <h2 className="text-md font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50">Share This Project</h2>
+        <ul className="flex flex-row pt-5 pb-7 ">
+          <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
+            <Link href={""}>
+              <FaLinkedin />
+            </Link>
+          </li>
+          <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
+            <Link href={""}>
+              <FaFacebook />
+            </Link>
+          </li>
+          <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
+            <Link href={""}>
+              <FaXTwitter />
+            </Link>
+          </li>
+        </ul>
+        <ButtonThemed 
+          color="gray" 
+          size="md"
+          as={Link}
+          radius="sm"
+          href="/projects"
+          className="w-full mt-4"
+          >
+          Back To All Projects
+        </ButtonThemed>
+      </div>
     </div>
   )
 }
