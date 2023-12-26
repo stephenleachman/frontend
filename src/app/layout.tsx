@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Comfortaa } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 
-const poppins = Comfortaa({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: [ '300', '400', '500', '600', '700', ]
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
 
 export const metadata: Metadata = {
