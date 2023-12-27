@@ -6,7 +6,7 @@ export default function ProjectPageProjectType(project: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div className="rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 sticky top-0">
+    <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 sm:py-5">
       <div className="flex flex-row">
         <Image 
           src={project.project.data.attributes.avatar.data.attributes.formats.small.url} 

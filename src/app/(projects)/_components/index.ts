@@ -4,6 +4,8 @@ import ProjectPageProjectType from "./ProjectPageProjectType";
 import ProjectPageProjectView from "./ProjectPageProjectView";
 import ProjectPageShare from "./ProjectPageShare";
 import Header from "./Header";
+import ProjectPageProjectDependencies from "./ProjectPageProjectDependencies";
+import ProjectPageProjectTechStack from "./ProjectPageProjectTechStack";
 
 export {
    ProjectPageHero,
@@ -12,4 +14,6 @@ export {
    ProjectPageProjectView,
    ProjectPageShare,
    Header,
+   ProjectPageProjectDependencies,
+   ProjectPageProjectTechStack,
 }
