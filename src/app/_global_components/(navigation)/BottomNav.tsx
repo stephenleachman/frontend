@@ -20,10 +20,10 @@ function BottomNav() {
           <Link 
             key={item.title}
             href={item.url}
-            className={`${pathname === `${item.url}` ? ' dark:text-custom-blue text-sky-500' : ''}`}
+            className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? ' dark:text-custom-blue text-sky-500' : ''}`}
           >
             <div className={`text-xs flex flex-row justify-center text-custom-gray-link dark:text-custom-dark-text transition ease delay-100 relative
-              ${pathname === `${item.url}` ? 'text-sky-400 dark:text-sky-400' : ''}
+              ${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'text-sky-400 dark:text-sky-400' : ''}
               `}>
               <div className="py-4 grid font-medium justify-items-center z-30">
                 {/* <FaRegUser className="text-2xl mb-2"/> {item.title} <react-icons icon={item.iconName} /> */}
@@ -34,8 +34,8 @@ function BottomNav() {
                 {item.icon === 'BsGraphUpArrow' && <BsGraphUpArrow className="text-2xl mb-2"/>}
                 {item.title}
               </div>
-              <div className={`${pathname === `${item.url}` ? 'w-full h-[4px] bg-gradient-to-r from-custom-blue to-custom-green absolute top-0 left-0 mr-[-4px] z-50' : ''}`}></div>
-              <div className={`${pathname === `${item.url}` ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
+              <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'w-full h-[4px] bg-gradient-to-r from-custom-blue to-custom-green absolute top-0 left-0 mr-[-4px] z-50' : ''}`}></div>
+              <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
             </div>
           </Link>
         ))}

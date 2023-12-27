@@ -40,10 +40,10 @@ function SideNav() {
                 <Link 
                   key={item.title}
                   href={item.url}
-                  className={`${pathname === `${item.url}` ? ' dark:text-custom-blue text-sky-500 border-b-2	border-custom-blue' : ''}`}
+                  className={`${pathname === `${item.url}`|| pathname.includes(`${item.url2}`) ? ' dark:text-custom-blue text-sky-500 border-b-2	border-custom-blue' : ''}`}
                 >
                   <div className={`text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-custom-blue dark:hover:text-custom-blue transition ease delay-100 relative
-                    ${pathname === `${item.url}` ? ' text-sky-400 hover:text-custom-blue dark:hover:text-custom-blue dark:text-sky-400' : ''}
+                    ${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? ' text-sky-400 hover:text-custom-blue dark:hover:text-custom-blue dark:text-sky-400' : ''}
                     `}>
                     <div className="py-4 grid justify-items-center font-medium	z-30">
                       {/* <FaRegUser className="text-2xl mb-2"/> {item.title} <react-icons icon={item.iconName} /> */}
@@ -54,8 +54,8 @@ function SideNav() {
                       {item.icon === 'BsGraphUpArrow' && <BsGraphUpArrow className="text-2xl mb-2"/>}
                       {item.title}
                     </div>
-                    <div className={`${pathname === `${item.url}` ? 'h-full w-[4px] bg-gradient-to-b from-custom-blue to-custom-green absolute right-0 mr-[-4px]' : ''}`}></div>
-                    <div className={`${pathname === `${item.url}` ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
+                    <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-[4px] bg-gradient-to-b from-custom-blue to-custom-green absolute right-0 mr-[-4px]' : ''}`}></div>
+                    <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
                   </div>
                 </Link>
               ))}

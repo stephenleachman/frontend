@@ -6,7 +6,7 @@ import { IoMdSearch } from "react-icons/io";
 export default function ProjectCard(props: any) {
 
   return (
-    <div id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden flex flex-col drop-shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 lg:w-[400px] h-max">
+    <div id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden flex flex-col drop-shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 lg:w-[400px] h-max mb-5">
       <div id="cardBody" className="p-5">
         <div className="flex flex-col">
           <h3 className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-sm font-normal mb-2">

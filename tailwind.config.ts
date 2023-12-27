@@ -30,7 +30,7 @@ const config: Config = {
         'custom-dark-text': '#8899A8',
 
         'custom-Opacity-blue': '#EBF6FB',
-        'custom-Opacity-green': '#ECF7F3',
+        'custom-Opacity-green': '#EBF6FB',
       },
       screens: {
         'tall': { 
