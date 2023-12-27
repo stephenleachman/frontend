@@ -65,7 +65,7 @@ export default function ProjectPageHero(project: any) {
       >
       <ul className="rounded-lg overflow-hidden">
         {project.project.data.attributes.project_cover.data.map((projectImage: any) => (  
-          <li key={projectImage.id[0]} >
+          <li key={projectImage.id} >
             <SwiperSlide className="" >
                 <Image 
                   src={projectImage.attributes.url} 
