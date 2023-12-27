@@ -1,26 +1,71 @@
+'use client'
+
 import { ButtonThemed } from "@/app/_global_components";
 import Link from "next/link";
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter, FaFacebook } from "react-icons/fa6";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaXTwitter, FaFacebook, FaSquareWhatsapp, FaFacebookF } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
+
 
 export default function ProjectPageShare(project: any) {
+
   return (
-    <div className="rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5">
+    <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 mb-16 sm:mb-0">
       <h2 className="text-md font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50">Share This Project</h2>
-      <ul className="flex flex-row py-5 border-b border-custom-dark-link dark:border-custom-dark-1">
-        <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
-          <Link href={""}>
-            <FaLinkedin />
-          </Link>
+      <ul className="flex flex-row lg:justify-between py-5 border-b border-custom-dark-link dark:border-custom-dark-1">
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#0077b5] w-[40px] h-[40px] grid place-content-center rounded-md">
+          <LinkedinShareButton 
+          title={project.project.data.attributes.project_name}
+          summary={project.project.data.attributes.overvierw}
+          source="https://stephenleachman.com"
+          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}
+          className="w-[40px] h-[40px] grid place-content-center"  
+          >
+            <FaLinkedinIn />
+          </LinkedinShareButton>
         </li>
-        <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
-          <Link href={""}>
-            <FaFacebook />
-          </Link>
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#1877F2] w-[40px] h-[40px] grid place-content-center rounded-md">
+          <FacebookShareButton 
+          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}     
+          className="w-[40px] h-[40px] grid place-content-center" 
+          >
+           <FaFacebookF />
+          </FacebookShareButton>
         </li>
-        <li className="text-2xl mr-7 hover:text-custom-blue transition ease delay-100 dark:hover:text-custom-blue dark:text-custom-dark-text text-custom-gray-link">
-          <Link href={""}>
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#1DA1F2] w-[40px] h-[40px] grid place-content-center rounded-md">
+          <TwitterShareButton 
+          title={project.project.data.attributes.project_name}
+          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          className="w-[40px] h-[40px] grid place-content-center" 
+          >
             <FaXTwitter />
-          </Link>
+          </TwitterShareButton>
+        </li>
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#25D366] w-[40px] h-[40px] grid place-content-center rounded-md">
+          <WhatsappShareButton 
+          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          className="w-[40px] h-[40px] grid place-content-center" 
+          >
+            <FaWhatsapp />
+          </WhatsappShareButton>
+        </li>
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#b05df3] w-[40px] h-[40px] grid place-content-center rounded">
+          <EmailShareButton 
+          subject={project.project.data.attributes.project_name}
+          body={project.project.data.attributes.overvierw}
+          separator="  "
+          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          className="w-[40px] h-[40px] grid place-content-center" 
+          >
+            <IoIosMail />
+          </EmailShareButton>
         </li>
       </ul>
         <ButtonThemed 

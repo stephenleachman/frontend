@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProjectPageDetails, ProjectPageHero, ProjectPageProjectDependencies, ProjectPageProjectTechStack, ProjectPageProjectType, ProjectPageShare } from '../../_components';
 
 
@@ -59,6 +58,9 @@ const projectPage = async ({params}: any) => {
           <div className="flex flex-col-reverse lg:flex-row sm:gap-5">
             <div className="flex-auto w-full">
               <ProjectPageDetails project={project}/>
+              <div className="lg:hidden sm:mt-5">
+                <ProjectPageShare project={project} />
+              </div>
             </div>
             <div className="lg:min-w-[350px] xl:min-w-[400px] flex flex-col sm:gap-5">
               <ProjectPageProjectType project={project}/>
