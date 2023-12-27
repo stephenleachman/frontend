@@ -22,8 +22,8 @@ export default function ContactForm() {
               <FaUser className="text-base text-default-400 pointer-events-none flex-shrink-0" />
             }
             classNames={{
-              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
-              input: "opacaty-0 text-base"
+              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2 ",
+              input: "opacaty-0 text-sm ",
             }}
             />
           </div>
@@ -40,7 +40,7 @@ export default function ContactForm() {
             }
             classNames={{
               inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
-              input: "opacaty-0 text-base"
+              input: "opacaty-0 text-base text-sm"
             }}
             />
           </div>
@@ -64,7 +64,7 @@ export default function ContactForm() {
               color="gray" 
               size="lg"
               radius="sm"
-              // classNames={{
+              // className={{
               //   base: "w-full font-medium dark:text-custom-gray-1 text-custom-dark-2",
               //   input: "h-[100px] font-medium dark:text-custom-gray-1 text-custom-dark-2",
               //   inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2"
