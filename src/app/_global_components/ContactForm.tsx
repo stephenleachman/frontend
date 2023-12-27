@@ -13,23 +13,24 @@ export default function ContactForm() {
           <div className="mt-5 text-base">
             <Input
             type="name"
-            placeholder="Whats your name"
+            placeholder="Name"
             labelPlacement="outside"
             variant="faded"
             radius="sm"
             size="lg"
             startContent={
-              <FaUser className="text-lg text-default-400 pointer-events-none flex-shrink-0" />
+              <FaUser className="text-base text-default-400 pointer-events-none flex-shrink-0" />
             }
             classNames={{
-              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2 text-lg"
+              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
+              input: "opacaty-0 text-base"
             }}
             />
           </div>
           <div className="mt-5">
             <Input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Email"
             labelPlacement="outside"
             variant="faded"
             radius="sm"
@@ -39,7 +40,7 @@ export default function ContactForm() {
             }
             classNames={{
               inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
-              input: "opacaty-0"
+              input: "opacaty-0 text-base"
             }}
             />
           </div>
@@ -63,7 +64,11 @@ export default function ContactForm() {
               color="gray" 
               size="lg"
               radius="sm"
-              className="font-medium dark:text-custom-gray-1 text-custom-dark-2"
+              // classNames={{
+              //   base: "w-full font-medium dark:text-custom-gray-1 text-custom-dark-2",
+              //   input: "h-[100px] font-medium dark:text-custom-gray-1 text-custom-dark-2",
+              //   inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2"
+              // }}
               >
               Submit
             </ButtonThemed>
