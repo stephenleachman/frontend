@@ -40,7 +40,8 @@ export default function ContactForm() {
             }
             classNames={{
               inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
-              input: "opacaty-0 text-base"
+              input: "opacaty-0 text-base",
+              
             }}
             />
           </div>
