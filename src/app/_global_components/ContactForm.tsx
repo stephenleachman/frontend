@@ -62,15 +62,20 @@ export default function ContactForm() {
               color="gray" 
               size="lg"
               radius="sm"
-              // className={{
-              //   base: "w-full font-medium dark:text-custom-gray-1 text-custom-dark-2",
-              //   input: "h-[100px] font-medium dark:text-custom-gray-1 text-custom-dark-2",
-              //   inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2"
-              // }}
               >
               Submit
             </ButtonThemed>
           </div>
+          <label className="block">
+            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Email
+            </span>
+            <input type="email" name="email" 
+              className="mt-1 px-5 py-3 bg-custom-gray-1 ring-2	ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-2" 
+              placeholder="you@example.com" 
+              />
+          </label>
+          
         </form>
       </div>
     </div>
