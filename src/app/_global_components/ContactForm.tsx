@@ -13,9 +13,8 @@ export default function ContactForm() {
           <div className="mt-5 text-base">
             <Input
             type="name"
-            placeholder="Name"
+            placeholder="name"
             labelPlacement="outside"
-            variant="faded"
             radius="sm"
             size="lg"
             startContent={
@@ -30,9 +29,8 @@ export default function ContactForm() {
           <div className="mt-5">
             <Input
             type="email"
-            placeholder="Email"
+            placeholder="email"
             labelPlacement="outside"
-            variant="faded"
             radius="sm"
             size="lg"
             startContent={
@@ -47,14 +45,13 @@ export default function ContactForm() {
           </div>
           <div className="mt-5">
           <Textarea
-            label="Description"
+            label="messege"
             size="lg"
             classNames={{
               base: "w-full",
               input: "h-[100px]",
               inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2"
             }}
-            variant="faded"
             disableAutosize
           />
           </div>

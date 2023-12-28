@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Inputs */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -12,4 +13,10 @@ input:-webkit-autofill:active {
   -webkit-background-clip: text !important;
   background-clip: text !important;
   border: none !important;
+}
+[data-slot="input-wrapper"] {
+  border: 2px solid #e8e8e8;
+}
+[data-focus="true"] [data-slot="input-wrapper"] {
+  border: 2px solid #8899a872;
 }

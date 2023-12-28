@@ -35,7 +35,7 @@ export default function HeroMobile() {
             >
             </Image>
           </div>
-          <div className="absolute top-4 right-5 md:hidden">
+          <div className="absolute top-4 right-5 lg:hidden">
             <ThemeToggler />
           </div>
           <div className="flex flex-col justify-center sm:justify-end gap-8 absolute left-5 bottom-5 sm:hidden">
