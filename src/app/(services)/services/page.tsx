@@ -1,7 +1,7 @@
 
 export default function page() {
   return (
-    <div className="bg-custom-gray dark:bg-custom-dark-4 h-screen sm:mb-[-60px] mb-[-200px] grid place-content-center px-4 md:px-10">
+    <div className="bg-custom-gray dark:bg-custom-dark-4 h-screen sm:mt-[-60px] mt-[-200px] grid place-content-center px-4 md:px-10">
       <div className="flex justify-center ">
         <div className="container mt-[-50px]">
           <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2 text-center">My Services</h1>
