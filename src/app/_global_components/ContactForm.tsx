@@ -55,8 +55,6 @@ export default function ContactForm() {
             disableAutosize
           />
           </div>
-         
-
           <div className="mt-5 flex justify-end">
             <ButtonThemed 
               color="gray" 
@@ -65,17 +63,7 @@ export default function ContactForm() {
               >
               Submit
             </ButtonThemed>
-          </div>
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Email
-            </span>
-            <input type="email" name="email" 
-              className="mt-1 px-5 py-3 bg-custom-gray-1 ring-2	ring-slate-200 placeholder-slate-400 focus:outline-none focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-2" 
-              placeholder="you@example.com" 
-              />
-          </label>
-          
+          </div>          
         </form>
       </div>
     </div>

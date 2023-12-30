@@ -11,6 +11,7 @@ import SideNavThemeToggler from './SideNavThemeToggler';
 import Badge from './Badge';
 import ContactSection from './ContactSection';
 import ContactForm from './ContactForm';
+import { ContactEmailTemplate } from './(EmailTemplates)/ContactEmailTemplate';
 
 export {
     SideNav,
@@ -26,4 +27,5 @@ export {
     Badge,
     ContactSection,
     ContactForm,
+    ContactEmailTemplate,
 }

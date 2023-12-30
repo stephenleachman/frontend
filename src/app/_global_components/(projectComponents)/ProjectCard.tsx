@@ -38,7 +38,7 @@ export default function ProjectCard(props: any) {
                 alt={projectImage.attributes.alternativeText}     
                 height={270}
                 width={500}
-                className="cover w-full"
+                className="object-cover w-full h-[300px]"
               >
               </Image>
             </SwiperSlide>
