@@ -5,7 +5,6 @@ import { FaUser } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-// import Footer from '../api/send'
 
 const ContactForm = () => {
   const [data, setData] = useState({
