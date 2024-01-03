@@ -10,10 +10,15 @@ export async function POST(request: any) {
         console.log("body", body)
         const { email, name, message, phone, subject } = body;
         const data: any = await resend.emails.send({
-            from: "Stephen <contact@stephenleachman.com>",
+            from: "Stephen <non-reply@stephenleachman.com>",
             to: email,
             subject: "This is Stephen Leachman",
-            react: ContactEmail({ firstName: name }) as React.ReactElement,
+            bcc: "globalumbrella16@gmail.com",
+            react: ContactEmail({
+                name: name,
+                email: email,
+                message: message
+            }) as React.ReactElement,
         });
 
         if (data.status === 200) {

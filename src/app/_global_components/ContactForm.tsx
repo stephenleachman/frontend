@@ -75,8 +75,8 @@ const ContactForm = () => {
               <FaUser className="text-base text-default-400 pointer-events-none flex-shrink-0" />
             }
             classNames={{
-              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2 ",
-              input: "opacaty-0 text-base ",
+              inputWrapper: "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none border-custom-gray-text dark:border-custom-dark-2",
+              input: "opacaty-0 text-base",
             }}
             />
           </div>
@@ -105,7 +105,7 @@ const ContactForm = () => {
           </div>
           <div className="mt-5">
           <Textarea
-            label="messege"
+            label="message"
             name="message"
             size="lg"
             required 

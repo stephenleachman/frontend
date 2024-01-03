@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 /* Inputs */
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
-  color : rgba(0, 0, 0, 0) !important;
-  -webkit-text-fill-color: rgb(108, 108, 108) !important;
+  color : rgb(255, 255, 255) !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  border: none !important;
+} */
+
+/* IMPUT LIGHT */
+input:-webkit-autofill {
+  color : rgb(0, 0, 0) !important;
+  -webkit-text-fill-color: rgb(35, 35, 35) !important;
   -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
   -webkit-background-clip: text !important;
   background-clip: text !important;
@@ -19,4 +29,20 @@ input:-webkit-autofill:active {
 }
 [data-focus="true"] [data-slot="input-wrapper"] {
   border: 2px solid #8899a872;
+}
+
+/* IMPUT DARK */
+.dark input:-webkit-autofill {
+  color : rgb(0, 0, 0) !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  border: none !important;
+}
+
+.dark {
+  [data-focus="true"] [data-slot="input-wrapper"] {
+    border: 2px solid #8899a872;
+  }
 }
