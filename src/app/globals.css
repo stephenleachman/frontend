@@ -41,8 +41,3 @@ input:-webkit-autofill {
   border: none !important;
 }
 
-.dark {
-  [data-focus="true"] [data-slot="input-wrapper"] {
-    border: 2px solid #8899a872;
-  }
-}
