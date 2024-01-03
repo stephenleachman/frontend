@@ -1,4 +1,4 @@
-import React from 'react'
+import { Metadata, ResolvingMetadata } from 'next';
 
 async function fetchPost(slug: string) {
     const options ={
@@ -20,6 +20,28 @@ async function fetchPost(slug: string) {
       console.error(err);
     }
   }
+  export async function generateMetadata({ params }: { params: {slug: string}; }, parent: ResolvingMetadata): Promise<Metadata> {
+    const post = await fetchPost(params.slug)
+    const title = post.data.attributes.title;
+    const slug = post.data.attributes.slug;
+    const summery = post.data.attributes.summery;
+    // const imgUrl = post.data.attributes.project_cover.data[0].attributes.url;
+    const previousImages = (await parent).openGraph?.images || [];
+    console.log(summery)
+    return {
+      title: `Stephen Leachman - ${title}`,
+      description: summery,
+      openGraph: {
+        title: title,
+        description: summery,
+        url: `https://stephenleachman.com/project/${slug}`,
+        siteName: "Stephen Leachmans Personal Portfolio",
+        // images: [ imgUrl, ...previousImages ],
+        locale: 'en_US',
+        type: 'website',
+      },
+    };
+  };
   
 
 const postPage = async ({params}: any) => {

@@ -4,7 +4,6 @@ import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 import { Toaster } from "react-hot-toast";
 // import CustomToast from '@/app/_global_components/ContactToast'
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
@@ -13,7 +12,29 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Stephen Leachman',
   description: 'Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.',
-}
+  metadataBase: new URL('https://stephenleachman.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  openGraph: {
+    title: "Stephen Leachman",
+    description: "Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.",
+    url: "stephenleachman.com",
+    siteName: "Stephen Leachmans Personal Portfolio",
+    images: [
+      {
+        url: "../public/images/blog_test_img.jpg",
+        width: 1260,
+        height: 800,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function RootLayout({
   children,
