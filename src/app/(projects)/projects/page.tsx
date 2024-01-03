@@ -1,4 +1,10 @@
 import { Hero, ShowCase } from "./_sections";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Stephen Leachman - My Projects',
+  description: 'Check out my web design and development projects. Discover the endless passability using the latest and greatest web-based technologies.',
+}
 
 export default function page() {
   return (

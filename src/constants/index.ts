@@ -19,6 +19,6 @@
 
   export const socialLinks = [
     { title: "Linkedin", url: "https://www.linkedin.com/in/stephenleachman/" , icon: "FaLinkedin"},
-    { title: "Instagram", url: "/" , icon: "FaInstagram"},
-    { title: "github", url: "/", icon: "FaGithub"},
+    { title: "Instagram", url: "https://www.instagram.com/sjleachman/" , icon: "FaInstagram"},
+    { title: "github", url: "https://github.com/stephenleachman", icon: "FaGithub"},
   ];

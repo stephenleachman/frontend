@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Stephen Leachman - Trading',
+  description: 'With a genuine passion for trading the financial markets, my trading site is the hub for all my trading activities. ',
+}
+
 
 function page() {
   return (

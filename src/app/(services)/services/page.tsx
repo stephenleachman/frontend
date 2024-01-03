@@ -1,3 +1,9 @@
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Stephen Leachman - Services',
+  description: 'Looking for an enterprise-grade website/app developed with the latest technologies, tailored around your specific needs, and optimized for search engines? Come check out my freelance services and see what is passable.',
+}
 
 export default function page() {
   return (

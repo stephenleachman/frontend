@@ -1,4 +1,10 @@
 import { BlogShowcase, Hero, } from "./_sections";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Stephen Leachman - My Blog',
+  description: 'My blog contains helpful articles relating to topics such as Business, Trading, Web Design, and Coding.',
+}
 
 export default function page() {
   return (
