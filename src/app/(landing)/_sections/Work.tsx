@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import JanitorsDirectLogo from '@/../public/images/JanitorsDirectLogo.svg';
+import FreelancerImage from '@/../public/images/freelancerImage.svg'
+import TraderImage from '@/../public/images/traderImage.svg'
 import Link from 'next/link';
 
 function Work() {
@@ -32,7 +34,7 @@ function Work() {
               janitorsdirect.com
             </Link>
           </div>
-          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-2 dark:bg-gray-900  rounded-lg">
+          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">
             <Image 
               src={JanitorsDirectLogo} 
               alt="Janitors Direct LLC. Logo"
@@ -65,9 +67,9 @@ function Work() {
               Learn More
             </Link>
           </div>
-          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-2 dark:bg-gray-900  rounded-lg">
+          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">
             <Image 
-              src={JanitorsDirectLogo} 
+              src={FreelancerImage} 
               alt="Janitors Direct LLC. Logo"
               className="p-4"
               height={200}
@@ -98,9 +100,9 @@ function Work() {
               Learn More
             </Link>
           </div>
-          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-2 dark:bg-gray-900  rounded-lg">
+          <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">
             <Image 
-              src={JanitorsDirectLogo} 
+              src={TraderImage} 
               alt="Janitors Direct LLC. Logo"
               className="p-4"
               height={200}

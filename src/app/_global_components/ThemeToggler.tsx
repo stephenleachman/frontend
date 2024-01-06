@@ -21,7 +21,10 @@ function ThemeToggler() {
   return (
 
     <div className="flex items-center">
-      <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">{currentTheme}</p>
+      {/* {currentTheme === 'dark' ? <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">Light</p>: 
+        <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">Dark</p>} */}
+        
+        <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">{currentTheme}</p>
       <div className="h-8 w-8 text-xl font-bold	">
         {currentTheme === 'dark' ? (
           <button
@@ -29,8 +32,7 @@ function ThemeToggler() {
             onClick={() => setTheme('light')}
           >
             {' '}
-            <BsMoonStarsFill />
-
+          <MdSunny />
           </button>
         ) : (
           <button
@@ -38,7 +40,7 @@ function ThemeToggler() {
           onClick={() => setTheme('dark')}
         >
           {' '}
-         <MdSunny />
+          <BsMoonStarsFill />
           </button>
         )}
       </div>

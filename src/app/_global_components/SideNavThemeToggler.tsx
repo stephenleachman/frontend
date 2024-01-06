@@ -28,7 +28,7 @@ function ThemeToggler() {
             onClick={() => setTheme('light')}
           >
             {' '}
-            <BsMoonStarsFill />
+            <MdSunny />
 
           </button>
         ) : (
@@ -37,7 +37,7 @@ function ThemeToggler() {
           onClick={() => setTheme('dark')}
         >
           {' '}
-         <MdSunny />
+          <BsMoonStarsFill />
           </button>
         )}
       </div>

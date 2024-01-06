@@ -1,6 +1,6 @@
 import { Metadata, ResolvingMetadata } from 'next';
 
-async function fetchPost(slug: string) {
+async function fetchPost(slug: any) {
     const options ={
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
@@ -27,14 +27,13 @@ async function fetchPost(slug: string) {
     const summery = post.data.attributes.summery;
     // const imgUrl = post.data.attributes.project_cover.data[0].attributes.url;
     const previousImages = (await parent).openGraph?.images || [];
-    console.log(summery)
     return {
       title: `Stephen Leachman - ${title}`,
       description: summery,
       openGraph: {
         title: title,
         description: summery,
-        url: `https://stephenleachman.com/project/${slug}`,
+        url: `https://stephenleachman.com/blog/${slug}`,
         siteName: "Stephen Leachmans Personal Portfolio",
         // images: [ imgUrl, ...previousImages ],
         locale: 'en_US',
