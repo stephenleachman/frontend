@@ -4,6 +4,7 @@ import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 import { Toaster } from "react-hot-toast";
 // import CustomToast from '@/app/_global_components/ContactToast'
+import OGImage from '@/../public/images/hero-image-3.png'
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Stephen Leachmans Personal Portfolio",
     images: [
       {
-        url: "../public/images/blog_test_img.jpg",
+        url: '{OGImage}',
         width: 1260,
         height: 800,
       },
