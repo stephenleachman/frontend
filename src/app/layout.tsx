@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Stephen Leachman',
   description: 'Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.',
-  metadataBase: new URL('https://stephenleachman.com'),
+  // metadataBase: new URL('https://stephenleachman.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Stephen Leachmans Personal Portfolio",
     images: [
       {
-        url: '{OGImage}',
+        url: 'https://res.cloudinary.com/dpthcnuy6/image/upload/v1704587309/ltqrvd4sswfu8pdv9gbi.jpg',
         width: 1260,
         height: 800,
       },
