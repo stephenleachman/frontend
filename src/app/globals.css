@@ -41,3 +41,7 @@ input:-webkit-autofill {
   border: none !important;
 }
 
+.dark body {
+  background-color: rgb(31 42 55)
+}
+

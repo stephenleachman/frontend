@@ -1,6 +1,6 @@
 import { ThemeToggler } from '@/app/_global_components';
 import Image from 'next/image';
-import HeroImage from '@/../public/images/hero_image-10.png';
+import HeroImage from '@/../public/images/hero_image-1.png';
 import logo from '@/../public/images/mainMenuIcons/NavLogo.svg'
 import Link from 'next/link';
 

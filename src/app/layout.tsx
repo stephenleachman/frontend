@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Stephen Leachman',
   description: 'Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.',
-  // metadataBase: new URL('https://stephenleachman.com'),
+  metadataBase: new URL('https://stephenleachman.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{scrollBehavior:'smooth'}}>
-      <body className={poppins.className}>
+      <body className={poppins.className}> 
         <Providers>
         <Toaster position="bottom-right" toastOptions={{ duration: 3000, style: {
           background: '#333',

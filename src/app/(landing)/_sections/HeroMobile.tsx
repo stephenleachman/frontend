@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
 import HeroImageMobile from '@/../public/images/mobile_hero_image.png';
+import HeroImageMobile2 from '@/../public/images/mobal-hero-image.png';
 import Logo from '@/../public/images/mainMenuIcons/NavLogo.svg'
 import { ButtonThemed } from "@/app/_global_components";
 import { TypeAnimation } from "react-type-animation";
@@ -16,7 +17,7 @@ export default function HeroMobile() {
       <div className=" container relative flex justify-center">
         <div className="self-end h-400px">
         <Image
-            src={HeroImageMobile}
+            src={HeroImageMobile2}
             alt="hero image of Stephen Leachman"
             height={400}
             width={400}

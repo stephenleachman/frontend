@@ -5,7 +5,7 @@ import { ThemeToggler } from '@/app/_global_components'
 import { FaChevronCircleDown  } from "react-icons/fa";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import HeroImage from '@/../public/images/hero_image-10.png';
+import HeroImage from '@/../public/images/hero_image-1.png';
 import { ButtonThemed } from '@/app/_global_components/ButtonThemed';
 
 function Hero() {
