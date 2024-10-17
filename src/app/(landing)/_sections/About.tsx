@@ -19,7 +19,7 @@ async function fetchAboutMe() {
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short' };
 
       // Sorting the data by date in descending order (newest first)
-    aboutMe?.data?.sort((a: any, b: any) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime());
+    aboutMe?.data?.sort((a: any, b: any) => new Date(b.attributes.date).getTime() + new Date(a.attributes.date).getTime());
 
     return (
       
