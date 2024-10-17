@@ -55,7 +55,7 @@
     line-height: 1.75rem;
     margin-bottom:  2.25rem;
     letter-spacing: 0.05em;
-    line-height: 1.625;
+    /* line-height: 1.625; */
     --tw-text-opacity: 1;
     color: rgb(75 85 99 / var(--tw-text-opacity));
 }

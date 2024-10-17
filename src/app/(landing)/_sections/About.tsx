@@ -17,7 +17,10 @@ async function fetchAboutMe() {
   
     const aboutMe = await fetchAboutMe();
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short' };
-  
+
+      // Sorting the data by date in descending order (newest first)
+    aboutMe?.data?.sort((a: any, b: any) => new Date(a.attributes.date).getTime() - new Date(b.attributes.date).getTime());
+
     return (
       
       <div className="flex justify-center">

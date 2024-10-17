@@ -22,7 +22,7 @@ export default function ProjectPageHero(project: any) {
             {project.project.data.attributes.project_name}
           </h1>
           <div className="h-1 w-20 bg-gradient-to-r from-custom-blue to-custom-green rounded my-8 "></div>
-          <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg	">
+          <p className="text-custom-dark-1 dark:text-custom-dark-text leading-7 tracking-wider">
             {project.project.data.attributes.overvierw}
           </p>
         </div>
