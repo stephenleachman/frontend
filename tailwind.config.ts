@@ -27,7 +27,7 @@ const config: Config = {
         'custom-dark-2': '#374151',
         'custom-dark-3': '#1F2A37',
         'custom-dark-4': '#111928',
-        'custom-dark-text': '#8899A8',
+        'custom-dark-text': 'rgb(148 163 184)',
 
         'custom-Opacity-blue': '#EBF6FB',
         'custom-Opacity-green': '#EBF6FB',
