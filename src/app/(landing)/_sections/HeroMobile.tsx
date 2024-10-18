@@ -56,7 +56,7 @@ export default function HeroMobile() {
         </div>
       </div>
     </div>
-     <div className="flex justify-center  h-[55vh] dark:bg-custom-dark-4 w-full border-b-[3px] border-white dark:border-custom-dark-1 relative pb-10">
+     <div className="flex justify-center  h-[47vh] dark:bg-custom-dark-4 w-full border-b-[3px] border-white dark:border-custom-dark-1 relative pb-10">
      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full z-0 dark:hidden"></div>
         <div className="container px-4 md:px-10 z-10 ">
           <div className="flex items-center mt-10">
