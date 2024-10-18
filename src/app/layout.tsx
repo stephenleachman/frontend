@@ -53,7 +53,7 @@ export default function RootLayout({
           <div className="fixed hidden sm:block">
             <SideNav />
           </div>
-          <div className="sm:ml-[91px] relative min-h-screen pb-[164px] sm:pb-[56px]">
+          <div className="sm:ml-[91px] relative min-h-screen pb-[164px] sm:pb-[56px] bg-custom-gray dark:bg-custom-dark-4 ">
             {children}
             <Footer />
           </div>

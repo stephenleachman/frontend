@@ -13,7 +13,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 export default function HeroMobile() {
   return (
     <div className="h-[91vh] flex flex-col" >
-      <div className="flex justify-center 	 bg-custom-gray dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
+      <div className="flex justify-center bg-custom-gray dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
         <div className=" container relative flex justify-center">
           <div className="self-end h-400px">
           <Image
@@ -57,8 +57,8 @@ export default function HeroMobile() {
         </div>
       </div>
      <div className="flex-grow dark:bg-custom-dark-4 w-full border-b-[3px] border-white dark:border-custom-dark-1 relative pb-10">
-      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full z-0 dark:hidden"></div>
-        <div className="container px-4 md:px-10 z-10 ">
+      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-[100%] w-full  dark:hidden "></div>
+        <div className="container px-4 md:px-10 z-10 relative">
           <div className="flex items-center mt-10">
             <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl mb-3 tracking-wide font-semibold	">👋 Hey, I’m</h2>
             <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-3"></div>
