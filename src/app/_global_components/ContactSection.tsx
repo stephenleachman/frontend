@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ContactImage from '@/../public/images/contact_image.png';
+import ContactImage from '@/../public/images/mobal-hero-image.png';
 import { ContactForm } from '.';
 
 export default function ContactSection() {
@@ -16,8 +16,8 @@ export default function ContactSection() {
             <Image
               src={ContactImage}
               alt="Stephens Image"
-              height={200}
-              width={180}
+              // height={200}
+              // width={180}
             > 
             </Image>
           </div>
