@@ -56,7 +56,10 @@ function Hero() {
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10">
               Welcome to my portfolio website, and thanks for stopping by! Here, you can get to know me, explore some of my exciting projects, and possibly pick up a few new insights from my blog. Enjoy your visit!
             </p>
-            <div>
+
+            {/* ------------------ Services Button ------------------ */}
+            
+            {/* <div>
               <ButtonThemed 
                 color="gradiant" 
                 size="lg"
@@ -66,7 +69,8 @@ function Hero() {
                 >
                   My Services
               </ButtonThemed>
-            </div>
+            </div> */}
+
           </div>
           <div className="justify-self-end pl-10 self-center">
             <Image

@@ -90,9 +90,12 @@ export default function HeroMobile() {
             </span>
           </div>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper ac enim mi pharetra amet.
+            Welcome to my portfolio website, and thanks for stopping by! Here, you can get to know me, explore some of my exciting projects, and possibly pick up a few new insights from my blog. Enjoy your visit!
           </p>
-          <div className="mb-5">
+
+          {/* ------------------ Services Button ------------------ */}
+
+          {/* <div className="mb-5">
             <ButtonThemed 
               color="gradiant" 
               size="lg"
@@ -102,7 +105,8 @@ export default function HeroMobile() {
               >
                 My Services
             </ButtonThemed>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </div>

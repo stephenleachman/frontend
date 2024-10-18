@@ -13,7 +13,7 @@ function page() {
         <div className="container pb-[300px]">
           <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2 text-center">My Trading</h1>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mt-5 md:mt-10 lg:max-w-[700px] text-center">
-            This page is currently in development. Stay tuned, estimated lunch date, March 2024
+          🚧 This page is currently in development. Stay tuned! 🚧
           </p>
         </div>
       </div>
