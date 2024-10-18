@@ -28,11 +28,17 @@ async function RecentProjects() {
 
   return (
     <div className="flex justify-center">
+      
       {/* <div className="container grid z-10 py-10 md:py-10 mb-16 sm:mb-0">
         <div className="grid grid-col md:grid-cols-2 xl:grid-cols-3 gap-8">
           {Projects && Projects.data.map((project: any) => ( <ProjectCard key={project.id} project={project}/>))}
         </div>
       </div> */}
+      <div className="container h-full">
+        <h2 className="text-2xl text-center py-20 text-custom-dark-1 dark:text-custom-dark-text">
+        💻 Projects Coming Soon!
+        </h2>
+      </div>
     </div>
   )
 }
