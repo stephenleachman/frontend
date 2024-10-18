@@ -12,12 +12,13 @@ export default function ContactSection() {
           <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-flow-col gap-8 xl:gap-16">
-          <div className="bg-custom-dark-1/30 dark:bg-custom-dark-4/50 rounded-lg  relative flex justify-center pt-5">
+          <div className="bg-custom-dark-1/30 dark:bg-custom-dark-4/50 rounded-lg  relative flex justify-center pt-5 ">
             <Image
               src={ContactImage}
               alt="Stephens Image"
-              // height={200}
-              // width={180}
+              // width={500}
+              // height={500}
+              className="object-cover bottom-0"
             > 
             </Image>
           </div>
