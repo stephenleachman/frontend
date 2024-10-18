@@ -57,7 +57,7 @@ const ContactForm = () => {
           method="POST" 
           onSubmit={sendEmail}
           >
-          <h4 className="text-custom-dark-2 dark:text-gray-50 text-lg tracking-wide">Sent Me An Email</h4>
+          <h4 className="text-custom-dark-2 dark:text-gray-50 text-lg tracking-wide">📩 Sent Me An Email</h4>
           <div className="mt-5 text-base">
             <Input
             type="text"
