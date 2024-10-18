@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="bg-custom-gray dark:bg-custom-dark-4 h-screen  grid place-content-center px-4 md:px-10 mb-[-120px]">
+    <div className="bg-custom-gray dark:bg-custom-dark-4 h-screen  grid place-content-center px-4 md:px-10 mb-[-90px]">
       <div className="flex justify-center ">
         <div className="container pb-[300px]">
           <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2 text-center">My Services</h1>
