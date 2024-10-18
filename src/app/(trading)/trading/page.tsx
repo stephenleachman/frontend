@@ -14,7 +14,10 @@ function page() {
           <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent text-center pb-2">My Trading</h1>
           <h1 className="text-5xl md:text-5xl py-5 text-center">🚧</h1>
           <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg  lg:max-w-[700px] text-center">
-            This page is currently in development. Stay tuned! 
+            This page is currently in development.
+          </p>
+          <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg  lg:max-w-[700px] text-center mt-2">
+            Stay tuned! 
           </p>
         </div>
       </div>
