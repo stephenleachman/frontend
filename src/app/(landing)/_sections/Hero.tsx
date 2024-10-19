@@ -79,7 +79,7 @@ function Hero() {
               height={1000}
               width={1000}
               priority
-              className="object-cover max-h-[800px] w-full mb-[100px]"
+              className="object-cover max-h-[700px] w-full mb-[100px]"
             >
             </Image>
           </div>
