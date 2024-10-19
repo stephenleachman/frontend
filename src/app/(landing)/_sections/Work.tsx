@@ -22,16 +22,16 @@ function Work() {
               B2B Services
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
+            I own and operate Janitors Direct, a janitorial company my wife and I started at the end of 2022. Since then, we have grown, serving clients across 
+            various industries. Our core service is recurring maintenance cleaning, focused on maintaining the appearance and sanitation of our client's facilities. 
+            In addition to that, we offer deep cleaning and electrostatic disinfecting services.
             </p>
             <Link
               href="https://janitorsdirect.com/"
               className="text-custom-dark-2 dark:text-gray-50 tracking-wide hover:opacity-75 transition-opacity font-semibold	"
               target="_blank"
             >
-              janitorsdirect.com
+              👉 janitorsdirect.com
             </Link>
           </div>
           <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">
@@ -56,15 +56,15 @@ function Work() {
               Web Designer & Developer
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
+            My agency closed at the beginning of 2020, but when time allows, I still enjoy freelancing. My work primarily focuses on designing custom websites and web applications, 
+            then developing them using technologies like Next.js, Tailwind CSS, and MongoDB. I also help businesses with social media marketing and account management. 
+            I love assisting clients in solving problems and growing their businesses.
             </p>
             <Link
               href="/services"
               className="text-custom-dark-2 dark:text-gray-50 tracking-wide hover:opacity-75 transition-opacity font-semibold	"
             >
-              Learn More
+              👉 Learn More
             </Link>
           </div>
           <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">
@@ -89,15 +89,15 @@ function Work() {
               Stocks & Options
             </h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, Mauris aliquet faucibus iaculis dui vitae ullamcorper 
-              ac enim mi pharetra amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae,
+            My true passion lies in the financial markets, specifically short-term equities trading. Trading is by far one of the most challenging endeavors anyone can pursue. 
+            To succeed as a trader, you have to love it. A Harvard MBA is nothing. What truly matters is skill, the ability to make split-second decisions, and strong self-awareness. 
+            You admit when you're wrong and move on quickly. Trading is like a sport, and your competition consists of billion-dollar funds and advanced algorithms. You either perform or lose money. What not to love.
             </p>
             <Link
               href="/trading"
               className="text-custom-dark-2 dark:text-gray-50 tracking-wide hover:opacity-75 transition-opacity font-semibold	"
             >
-              Learn More
+              👉 Learn More
             </Link>
           </div>
           <div className="flex justify-center lg:basis-1/2 bg-custom-dark-3 dark:bg-gray-900  rounded-lg">

@@ -23,14 +23,14 @@ export default function ContactSection() {
             </Image>
           </div>
           <div className="">
-            <h3 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide">How Can I Help?</h3>
+            <h3 className="text-custom-dark-2 dark:text-gray-50 text-2xl tracking-wide">Bringing Value!</h3>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text font-normal	mt-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus.
+            - Looking for a custom website design built with the latest web technologies? Or does your business need help building a 
+            strong online presence and assistance with marketing through Google and various social media channels? Let's work together to bring your vision to life.
             </p>
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text font-normal	mt-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus.
+            - If you're interested in collaborating on a specific project, I'm always looking to connect with like-minded individuals. Feel free to send me an email, 
+            and I’ll get back to you as soon as possible.
             </p>
           </div>
           <div className="md:min-w-[370px] xl:min-w-[450px] md:col-span-2 justify-items-center">

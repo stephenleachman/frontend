@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
             <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2">My Blog</h1>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mt-5 md:mt-10 lg:pr-10 lg:max-w-[700px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet proin ut vitae, felis. Mauris aliquet faucibus iaculis.
+              Welcome to my blog! Here, you'll find a variety of topics that interest me and that I enjoy writing about. 
             </p>
           </div>
           <div className="justify-self-center	lg:mr-20 hidden lg:block">
