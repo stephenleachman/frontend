@@ -5,6 +5,9 @@ import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 import { Toaster } from "react-hot-toast";
 // import CustomToast from '@/app/_global_components/ContactToast'
 import OGImage from '@/../public/images/hero-image-3.png'
+import GoogleAnalytics from '@/app/_global_components/GoogleAnalytics';
+
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
@@ -44,6 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{scrollBehavior:'smooth'}}>
+      <GoogleAnalytics />
       <body className={poppins.className}> 
         <Providers>
         <Toaster position="bottom-right" toastOptions={{ duration: 3000, style: {
