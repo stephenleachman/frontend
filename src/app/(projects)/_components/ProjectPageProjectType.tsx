@@ -9,7 +9,7 @@ export default function ProjectPageProjectType(project: any) {
     <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 sm:py-5">
       <div className="flex flex-row">
         <Image 
-          src={project.project.data.attributes.avatar.data.attributes.formats.small.url} 
+          src={project.project.data.attributes.avatar.data.attributes.url} 
           alt={project.project.data.attributes.avatar}     
           height={100}
           width={100}

@@ -4,7 +4,7 @@
     { title: "About", url: "about"  },
     { title: "Education", url: "education" },
     { title: "Work", url: "work", },
-    // { title: "Projects", url: "projects" },
+    { title: "Projects", url: "projects" },
     // { title: "Blog", url: "blog" },
     { title: "Contact", url: "contact" },
   ];

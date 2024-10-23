@@ -70,7 +70,7 @@ export default function ProjectCard(props: any) {
     <div id="cardFooter" className="p-5 border-t border-gray-200 dark:border-custom-dark-2 flex items-center">
       <div>
         <Image 
-          src={props.project.attributes.avatar.data.attributes.formats.thumbnail.url} 
+          src={props.project.attributes.avatar.data.attributes.url} 
           alt={props.project.attributes.avatar.data.attributes.alternativeText}        
           height={50}
           width={50}    

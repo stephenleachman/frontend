@@ -14,11 +14,6 @@ export default function page() {
       </section>
       <section className="px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-4">
         <ShowCase />
-        {/* <div className="container">
-          <h2 className="text-1xl text-center">
-            Projects Coming Soon!
-          </h2>
-        </div> */}
       </section>
     </main>
   )
