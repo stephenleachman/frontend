@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Stephen Leachman',
-  description: 'Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.',
+  description: 'Welcome to my portfolio website, and thanks for stopping by! Here, you can get to know me, explore some of my exciting projects, and possibly pick up a few new insights from my blog.',
   metadataBase: new URL('https://stephenleachman.com'),
   alternates: {
     canonical: '/',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Stephen Leachman",
-    description: "Welcome to my portfolio website. I am an options trader, small business owner, and freelance UI/UX web designer and software engineer.",
+    description: "Welcome to my portfolio website, and thanks for stopping by! Here, you can get to know me, explore some of my exciting projects, and possibly pick up a few new insights from my blog.",
     url: "stephenleachman.com",
     siteName: "Stephen Leachmans Personal Portfolio",
     images: [
