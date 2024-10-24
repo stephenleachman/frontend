@@ -58,10 +58,15 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       description: overvierw,
       url: `https://stephenleachman.com/project/${slug}`,
       siteName: "Stephen Leachmans Personal Portfolio",
-      images: [ imgUrl,  ],
+      images: [ imgUrl, ...previousImages ],
       locale: 'en_US',
       type: 'website',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: overvierw,
+      images: [ imgUrl, ...previousImages ],
   };
 };
 
