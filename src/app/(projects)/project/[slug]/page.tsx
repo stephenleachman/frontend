@@ -58,13 +58,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       description: overvierw,
       url: `https://stephenleachman.com/project/${slug}`,
       siteName: "Stephen Leachmans Personal Portfolio",
-      images: [ 
-        {
-          url: project.data.attributes.project_cover.data[0].attributes.url,
-          width: 1260,
-          height: 800,
-        },
-      ],
+      images: [ imgUrl, ...previousImages ],
       locale: 'en_US',
       type: 'website',
     },
@@ -75,7 +69,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       creator: "Stephen Leachman",
       images: [
         {
-          url: project.data.attributes.project_cover.data[0].attributes.url,
+          url: "https://res.cloudinary.com/dpthcnuy6/image/upload/v1729473860/janitors_Direct_Homepage_97ee410685.png",
           // blurDataURL: "you_blured_url_here",
           width: 1200,
           height: 630,
