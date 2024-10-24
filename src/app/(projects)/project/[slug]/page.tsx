@@ -66,7 +66,16 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       card: 'summary_large_image',
       title: title,
       description: overvierw,
-      images: [ imgUrl ],
+      creator: "Stephen Leachman",
+      images: [
+        {
+          url: "imgUrl",
+          // blurDataURL: "you_blured_url_here",
+          width: 1200,
+          height: 630,
+          alt: "Project Image",
+        },
+      ],
     }
   };
 };
