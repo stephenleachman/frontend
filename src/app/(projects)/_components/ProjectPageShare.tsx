@@ -25,7 +25,7 @@ export default function ProjectPageShare(project: any) {
           title={project.project.data.attributes.project_name}
           summary={project.project.data.attributes.overvierw}
           source="https://stephenleachman.com"
-          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}
+          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}
           className="w-[40px] h-[40px] grid place-content-center"  
           >
             <FaLinkedinIn />
@@ -33,16 +33,16 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#1877F2] w-[40px] h-[40px] grid place-content-center rounded-md">
           <FacebookShareButton 
-          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}     
+          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}     
           className="w-[40px] h-[40px] grid place-content-center" 
           >
            <FaFacebookF />
           </FacebookShareButton>
         </li>
-        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#1DA1F2] w-[40px] h-[40px] grid place-content-center rounded-md">
+        <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#000000] w-[40px] h-[40px] grid place-content-center rounded-md">
           <TwitterShareButton 
           title={project.project.data.attributes.project_name}
-          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <FaXTwitter />
@@ -50,7 +50,7 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#25D366] w-[40px] h-[40px] grid place-content-center rounded-md">
           <WhatsappShareButton 
-          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <FaWhatsapp />
@@ -61,7 +61,7 @@ export default function ProjectPageShare(project: any) {
           subject={project.project.data.attributes.project_name}
           body={project.project.data.attributes.overvierw}
           separator="  "
-          url={`https://portfolio-websit-v2.vercel.app/project/${project.project.data.attributes.slug}`}  
+          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <IoIosMail />
