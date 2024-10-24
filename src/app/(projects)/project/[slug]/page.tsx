@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       card: 'summary_large_image',
       title: title,
       description: overvierw,
-      images: [ imgUrl, ...previousImages ],
+      images: [ imgUrl ],
     }
   };
 };
