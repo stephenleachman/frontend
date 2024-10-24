@@ -58,7 +58,13 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       description: overvierw,
       url: `https://stephenleachman.com/project/${slug}`,
       siteName: "Stephen Leachmans Personal Portfolio",
-      images: [ imgUrl],
+      images: [ 
+        {
+          url: imgUrl,
+          width: 1260,
+          height: 800,
+        },
+      ],
       locale: 'en_US',
       type: 'website',
     },
@@ -69,7 +75,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       creator: "Stephen Leachman",
       images: [
         {
-          url: "imgUrl",
+          url: imgUrl,
           // blurDataURL: "you_blured_url_here",
           width: 1200,
           height: 630,
