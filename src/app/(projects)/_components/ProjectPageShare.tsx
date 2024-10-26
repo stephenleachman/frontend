@@ -76,7 +76,7 @@ export default function ProjectPageShare(project: any) {
             href="/projects"
             className="w-full mt-4"
             >
-            Back To All Projects
+            👉 Back To All Projects
         </ButtonThemed>
     </div>
   )
