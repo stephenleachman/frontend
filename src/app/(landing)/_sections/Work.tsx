@@ -58,7 +58,7 @@ function Work() {
             <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text mb-5">
             My agency closed at the beginning of 2020, but when time allows, I still enjoy freelancing. My work primarily focuses on designing custom websites and web applications, 
             then developing them using technologies like Next.js, Tailwind CSS, and MongoDB. I also help businesses with social media marketing and account management. 
-            I love assisting clients in solving problems and growing their businesses.
+            I love assisting clients in solving problems and healping with growing their businesses.
             </p>
             <Link
               href="/services"

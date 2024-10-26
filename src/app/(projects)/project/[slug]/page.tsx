@@ -70,7 +70,6 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       images: [
         {
           url: imgUrl,
-          // blurDataURL: "you_blured_url_here",
           width: 1200,
           height: 630,
           alt: "Project Image",
