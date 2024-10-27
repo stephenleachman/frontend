@@ -1,9 +1,9 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaRegUser,FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
+import { FaRegUser,FaLinkedin, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa6";
 import { IoIosImages } from "react-icons/io";
-import { BsGraphUpArrow } from "react-icons/bs";
+import { BsGraphUpArrow, BsTwitterX } from "react-icons/bs";
 import { TiPen } from "react-icons/ti";
 import MenuImage from '@/../public/images/mainMenuIcons/NavLogo.svg';
 import { ScrollShadow } from "@nextui-org/react";
@@ -74,8 +74,8 @@ function SideNav() {
                 >
                   <div className="py-2 text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 transition dark:hover:text-sky-500 ease delay-100"> 
                     {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl mb-2"/>}
-                    {item.icon === 'FaInstagram' && <FaInstagram className="text-2xl mb-2"/>}
-                    {item.icon === 'FaGithub' && <FaGithub className="text-2xl mb-2"/>}
+                    {item.icon === 'BsTwitterX' && <BsTwitterX className="text-2xl mb-2"/>}
+                    {item.icon === 'FaYoutube' && <FaYoutube className="text-2xl mb-2"/>}
                   </div>
                 </Link>
               ))}

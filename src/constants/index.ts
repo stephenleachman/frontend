@@ -19,6 +19,14 @@
 
   export const socialLinks = [
     { title: "Linkedin", url: "https://www.linkedin.com/in/stephenleachman/" , icon: "FaLinkedin"},
-    { title: "Instagram", url: "https://www.instagram.com/sjleachman/" , icon: "FaInstagram"},
+    { title: "X", url: "https://x.com/sjleachman", icon: "BsTwitterX"},
+    { title: "YouTube", url: "https://www.youtube.com/@StephenLeachman", icon: "FaYoutube"},
+  ];
+
+  export const socialLinksFooter = [
+    { title: "Linkedin", url: "https://www.linkedin.com/in/stephenleachman/" , icon: "FaLinkedin"},
+    { title: "X", url: "https://x.com/sjleachman", icon: "BsTwitterX"},
+    { title: "YouTube", url: "https://www.youtube.com/@StephenLeachman", icon: "FaYoutube"},
+    { title: "Instagram", url: "https://www.instagram.com/StephenLeachman" , icon: "FaInstagram"},
     { title: "github", url: "https://github.com/stephenleachman", icon: "FaGithub"},
   ];

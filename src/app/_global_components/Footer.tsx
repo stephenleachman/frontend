@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import FooterLogo from '@/../public/images/footer_logo.svg'
-import { FaRegUser,FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
+import { FaRegUser,FaLinkedin, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa6";
 import Link from 'next/link';
-import { socialLinks } from '@/constants';
+import { socialLinksFooter } from '@/constants';
+import { BsTwitterX } from 'react-icons/bs';
 
 function Footer() {
   return (
@@ -24,7 +25,7 @@ function Footer() {
           &copy; stephenleachman.com 
         </span>
         <div className="flex flex-row justify-center sm:justify-end gap-5">
-        {socialLinks.map((item) => (
+        {socialLinksFooter.map((item) => (
           <Link 
             key={item.title}
             href={item.url}
@@ -32,8 +33,11 @@ function Footer() {
           >
             <div className="py-2 text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 transition dark:hover:text-sky-500 ease delay-100 self-center"> 
               {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl"/>}
+              {item.icon === 'FaYoutube' && <FaYoutube className="text-2xl"/>}
               {item.icon === 'FaInstagram' && <FaInstagram className="text-2xl"/>}
+              {item.icon === 'BsTwitterX' && <BsTwitterX className="text-2xl"/>}
               {item.icon === 'FaGithub' && <FaGithub className="text-2xl"/>}
+              
             </div>
           </Link>
           ))}
