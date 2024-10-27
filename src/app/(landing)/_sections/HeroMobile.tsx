@@ -8,7 +8,8 @@ import { TypeAnimation } from "react-type-animation";
 import Link from 'next/link';
 import { ThemeToggler } from "@/app/_global_components";
 import { socialLinks } from "@/constants";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 
 export default function HeroMobile() {
   return (
@@ -47,9 +48,9 @@ export default function HeroMobile() {
                 target="_blank"
               >
               <div className="py-2 text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 transition dark:hover:text-sky-500 ease delay-100 self-center"> 
-                {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl"/>}
-                {item.icon === 'FaInstagram' && <FaInstagram className="text-2xl"/>}
-                {item.icon === 'FaGithub' && <FaGithub className="text-2xl"/>}
+                {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl mb-2"/>}
+                {item.icon === 'BsTwitterX' && <BsTwitterX className="text-2xl mb-2"/>}
+                {item.icon === 'FaYoutube' && <FaYoutube className="text-2xl mb-2"/>}
               </div>
               </Link>
             ))}
