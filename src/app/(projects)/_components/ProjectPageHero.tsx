@@ -53,7 +53,7 @@ export default function ProjectPageHero(project: any) {
         </div>
       </div>
 
-      <div className="xl:w-2/4 mt-[-1.25rem]  mx-[-1.25rem] lg:mt-0 lg:mx-0 "> 
+      <div className="xl:w-2/4 mt-[-1.25rem]  mx-[-1.25rem] lg:mt-0 lg:mx-0  place-content-center "> 
       <Swiper
       pagination={{
         clickable: true,
@@ -72,7 +72,8 @@ export default function ProjectPageHero(project: any) {
                   alt={projectImage.attributes.alternativeText}     
                   height={487}
                   width={1000}
-                  className="object-cover select-none xl:h-[450px] sm:rounded-lg "
+                  // style={{objectFit: "cover"}}
+                  className="object-cover select-none xl:max-h-[450px] sm:rounded-lg "
                 >
                 </Image>
             </SwiperSlide>
