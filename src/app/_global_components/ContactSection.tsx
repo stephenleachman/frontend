@@ -34,7 +34,7 @@ export default function ContactSection() {
             </p>
           </div>
           <div className="md:min-w-[370px] xl:min-w-[450px] md:col-span-2 justify-items-center">
-            <div className="mt-2">
+            <div className="mt-2 w-full">
             <ContactForm />
             </div>
           </div>

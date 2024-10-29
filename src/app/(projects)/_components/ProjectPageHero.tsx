@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function ProjectPageHero(project: any) {
 
   return (
-    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-10 sm:pb-5">
+    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-10 sm:pb-5 xl:min-h-[460px]">
       <div className="xl:w-2/4 flex flex-col justify-between ">
         <div>
           <h5 className="text-sm font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3 mb-5">
@@ -26,8 +26,8 @@ export default function ProjectPageHero(project: any) {
             {project.project.data.attributes.overvierw}
           </p>
         </div>
-        <div className="flex flex-col-reverse sm:flex-row mt-10 flex-re">
-          <div>
+        <div className="flex flex-col-reverse sm:flex-row mt-10">
+          <div >
           <ButtonThemed 
             color="gradiant" 
             size="lg"
@@ -53,7 +53,7 @@ export default function ProjectPageHero(project: any) {
         </div>
       </div>
 
-      <div className="xl:w-2/4 mt-[-1.25rem]  mx-[-1.25rem] lg:mt-0 lg:mx-0  place-content-center "> 
+      <div className="xl:w-2/4 mt-[-1.25rem]  mx-[-1.25rem] lg:mt-0 lg:mx-0 place-content-center "> 
       <Swiper
       pagination={{
         clickable: true,
@@ -70,10 +70,10 @@ export default function ProjectPageHero(project: any) {
                 <Image 
                   src={projectImage.attributes.url} 
                   alt={projectImage.attributes.alternativeText}     
-                  height={487}
+                  height={420}
                   width={1000}
                   // style={{objectFit: "cover"}}
-                  className="object-cover select-none xl:max-h-[450px] sm:rounded-lg "
+                  className="object-cover select-none xl:max-h-[450px] sm:rounded-lg"
                 >
                 </Image>
             </SwiperSlide>

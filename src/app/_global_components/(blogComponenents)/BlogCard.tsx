@@ -6,7 +6,7 @@ import { Badge, ButtonThemed } from '@/app/_global_components';
 import { FaRegCalendarAlt } from "react-icons/fa";
 import React from "react";
 
-export default function ProjectCard(props: any) {
+export default function BlogCard(props: any) {
 
   const truncatePostDesc  = props.post.attributes.summery.length > 150 ? 
   props.post.attributes.summery.substring(0, 150) + "..." : props.post.attributes.summery;
