@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   }
 }
 
-export const tradingCardInfo = [
+const tradingCardInfo = [
   { id: 1,
     title: "Daily Report Cards", 
     summery: "Each report card is divided into three key sections: pre-market analysis, intra-day plays, and post-market reviews. These sections are updated in real-time as the trading day progresses, with a final review completed after market close. The purpose of these report cards is to help me continually refine and improve my trading skills.",
@@ -77,14 +77,14 @@ export const tradingCardInfo = [
     isDisabled: true,
     buttonText: "Coming Soon!",
   },
-    { id: 6,
-      title: "Traders University", 
-      summery: "Becoming a Consistently Profitable Trader (CPT) requires experience, practice, and discipline. However, the journey begins with building a strong foundation and gaining a comprehensive understanding of how the financial markets operate. Trader’s University is designed to equip students with in-depth knowledge of the markets, covering everything needed to develop effective and profitable trading strategies.",
-      link: "/",
-      backgroundImage: "https://res.cloudinary.com/dpthcnuy6/image/upload/v1730566855/Designer_22_n42r88.jpg",
-      imgAlt: "Trading University Image",
-      isDisabled: true,
-      buttonText: "Coming Soon!",
+  { id: 6,
+    title: "Traders University", 
+    summery: "Becoming a Consistently Profitable Trader (CPT) requires experience, practice, and discipline. However, the journey begins with building a strong foundation and gaining a comprehensive understanding of how the financial markets operate. Trader’s University is designed to equip students with in-depth knowledge of the markets, covering everything needed to develop effective and profitable trading strategies.",
+    link: "/",
+    backgroundImage: "https://res.cloudinary.com/dpthcnuy6/image/upload/v1730566855/Designer_22_n42r88.jpg",
+    imgAlt: "Trading University Image",
+    isDisabled: true,
+    buttonText: "Coming Soon!",
   },
 ];
 
