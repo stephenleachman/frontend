@@ -75,6 +75,7 @@ interface Heading {
                     spy={true}
                     smooth={true}
                     duration={0}
+                    offset={-60}
                     hashSpy={false}
                     className="cursor-pointer text-custom-gray-link dark:text-custom-dark-text hover:text-custom-blue dark:hover:text-custom-blue transition ease-in-out "
                     >
