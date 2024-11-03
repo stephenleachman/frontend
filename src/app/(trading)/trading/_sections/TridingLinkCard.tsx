@@ -30,7 +30,7 @@ function TridingLinkCard({ title, summery, backgroundImage, imgAlt, isDisabled =
         <div className="bg-custom-gray dark:bg-custom-dark-3 absolute h-full w-full opacity-[85%] dark:opacity-[93%] select-none"></div>
         </div>
         <div className="sm:text-center z-10 p-5 relative">
-            <h2 className="text-4xl tracking-wide pb-2 bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent inline-block mb-5 font-semibold	">{title}</h2>
+            <h2 className="text-3xl sm:text-4xl tracking-wide pb-2 bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent inline-block mb-5 font-semibold">{title}</h2>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed mb-8 font-medium">
              {summery}
             </p>

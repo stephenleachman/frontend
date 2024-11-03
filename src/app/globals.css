@@ -67,8 +67,8 @@ input:-webkit-autofill {
   /* border: white 1px solid; */
 }
 .markdown h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem; 
+  font-size: 2rem;
+  line-height: 2.6rem; 
   margin-bottom:  1.25rem; 
   
   margin-top:  4rem;
@@ -94,7 +94,7 @@ input:-webkit-autofill {
   color: rgb(249 250 251 / var(--tw-text-opacity));  
 }
 .markdown h3 {
-  font-size: 1.70rem;
+  font-size: 1.50rem;
   line-height: 2.25rem;
   margin-bottom:  1.25rem; 
   margin-top: 2.50rem;

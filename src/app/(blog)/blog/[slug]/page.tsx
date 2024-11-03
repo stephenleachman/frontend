@@ -97,10 +97,10 @@ const postPage = async ({params}: any) => {
           </section>
         <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full dark:hidden"></div>
 
-        <section className="flex justify-center sm:px-4 md:px-10 z-10 pt-[80px] sm:pt-[100px] sm:pb-[180px] px-4">
+        <section className="flex justify-center sm:px-4 md:px-10 z-10 pt-[80px] sm:pt-[100px] sm:pb-[180px] px-4 mb-5">
           <div className="container relative z-10 text-center">
             <div className="max-w-[980px] justify-self-center">
-              <h1 className="text-4xl sm:text-5xl	inline-block leading-normal">{post.data.attributes.title}</h1>
+              <h1 className="text-4xl sm:text-5xl sm:leading-normal  inline-block">{post.data.attributes.title}</h1>
               <div className="w-[100px] h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 justify-self-center m-5 "></div>
               <div className="">
                 <p className="text-custom-dark-1 dark:text-custom-dark-text leading-7 tracking-wider">
@@ -132,7 +132,7 @@ const postPage = async ({params}: any) => {
                 height={500}
                 width={1600}
                 quality={100}
-                className="object-cover select-none max-h-[550px] sm:rounded-t-xl rounded-xl sm:rounded-b-none	"
+                className="object-cover select-none max-h-[550px] sm:rounded-t-xl rounded-xl sm:rounded-b-none"
               >
               </Image>             
             </div>

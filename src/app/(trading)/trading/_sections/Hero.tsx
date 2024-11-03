@@ -25,21 +25,14 @@ export default function Hero() {
           </Link>
           <ThemeToggler />
         </div>
-        <div className="flex flex-row justify-between items-center pt-[100px] mb-[-25px] lg:max-w-[1000px] mx-auto">
+        <div className="flex flex-row justify-between items-center pt-[100px] lg:max-w-[1000px] mx-auto">
           <div className="sm:text-center sm:justify-items-center">
-            <h1 className="text-4xl md:text-7xl tracking-wide pb-2 text-custom-dark-1 dark:text-custom-gray-1">Welcom Traders</h1>
+            <h1 className="text-4xl md:text-7xl tracking-wide pb-2 text-custom-dark-1 dark:text-custom-gray-1">Welcome Traders</h1>
             <div className="w-[100px] h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded sm:justify-self-center my-5 md:my-8"></div>
-            <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg ">
+            <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 sm:mb-[100px]">
             Join me on my journey as an active trader. On this page, you'll find my market research, analysis, strategies, and much more. 
             I’m also excited to announce the future launch of a Trader’s University, designed for those eager to build a career in trading.
             </p>
-           <div className="justify-self-center">
-            <Link
-              href="#traders-home"
-              >
-              <FaChevronCircleDown className="text-white dark:text-custom-dark-1 text-5xl z-10 dark:bg-custom-dark-4 bg-custom-blue-opacaty rounded-full p-1 mt-[60px]"/>
-            </Link>  
-           </div>
           </div>
         </div>
       </div>

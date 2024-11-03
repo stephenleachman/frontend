@@ -10,7 +10,7 @@ export default function Author(post: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div className="flex flex-wrap mt-10">
+    <div className="flex flex-wrap mt-10 mb-[-20px]">
       <div className="rounded-full">
         <Image
             src={authorAvatarImage} 

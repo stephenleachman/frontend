@@ -97,7 +97,7 @@ function TradingPage() {
       </section>
       <section id="traders-home" className="px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-4 sm:mb-10 mb-[90px]">
         <div className="flex justify-center">
-          <div className="container mt-[80px]">
+          <div className="container mt-10">
             <div className="">
               <div className="grid lg:grid-cols-2 gap-5">
                 {tradingCardInfo.map((card) => (
