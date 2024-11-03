@@ -17,7 +17,7 @@ export default function Author(post: any) {
             alt={alternativeText}  
             height={80}
             width={80}
-            className="rounded-full h-[40px] w-[40px] md:h-[80px] md:w-[80px] dark:ring-1 dark:ring-custom-dark-2"
+            className="rounded-full h-[60px] w-[60px] md:h-[80px] md:w-[80px] dark:ring-1 dark:ring-custom-dark-2"
             >
         </Image>
       </div>
