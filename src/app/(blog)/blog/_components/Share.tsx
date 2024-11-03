@@ -4,7 +4,7 @@ import { ButtonThemed } from "@/app/_global_components";
 import Link from "next/link";
 import { useState } from "react";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import { FaLinkedin, FaXTwitter, FaFacebook, FaSquareWhatsapp, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import {
   EmailShareButton,
@@ -15,7 +15,11 @@ import {
 } from "react-share";
 
 
-export default function ProjectPageShare(project: any) {
+export default function Share(post: any) {
+
+  const slug = post.post.data.attributes.slug;
+  const summery = post.post.data.attributes.summery;
+  const title = post.post.data.attributes.title;
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -27,15 +31,15 @@ export default function ProjectPageShare(project: any) {
   };
   
   return (
-    <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 mb-16 sm:mb-0">
-      <h2 className="text-md font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50">Share This Project</h2>
+    <div className="rounded-xl max-w-full bg-custom-gray-1 dark:bg-custom-dark-4 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 mb-16 sm:mb-0">
+      <h2 className="text-xl ">Share This Articles</h2>
       <ul className="flex flex-row lg:justify-between py-5 border-b border-custom-dark-link dark:border-custom-dark-1">
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#0077b5] w-[40px] h-[40px] grid place-content-center rounded-md">
           <LinkedinShareButton 
-          title={project.project.data.attributes.project_name}
-          summary={project.project.data.attributes.overvierw}
+          title={title}
+          summary={summery}
           source="https://stephenleachman.com"
-          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}
+          url={`https://stephenleachman.com/blog/${slug}`}
           className="w-[40px] h-[40px] grid place-content-center"  
           >
             <FaLinkedinIn />
@@ -43,7 +47,7 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#1877F2] w-[40px] h-[40px] grid place-content-center rounded-md">
           <FacebookShareButton 
-          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}     
+          url={`https://stephenleachman.com/blog/${slug}`}     
           className="w-[40px] h-[40px] grid place-content-center" 
           >
            <FaFacebookF />
@@ -51,8 +55,8 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#000000] w-[40px] h-[40px] grid place-content-center rounded-md">
           <TwitterShareButton 
-          title={project.project.data.attributes.project_name}
-          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
+          title={summery}
+          url={`https://stephenleachman.com/blog/${slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <FaXTwitter />
@@ -60,7 +64,7 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#25D366] w-[40px] h-[40px] grid place-content-center rounded-md">
           <WhatsappShareButton 
-          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
+          url={`https://stephenleachman.com/blog/${slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <FaWhatsapp />
@@ -68,10 +72,10 @@ export default function ProjectPageShare(project: any) {
         </li>
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#b05df3] w-[40px] h-[40px] grid place-content-center rounded">
           <EmailShareButton 
-          subject={project.project.data.attributes.project_name}
-          body={project.project.data.attributes.overvierw}
+          subject={title}
+          body={summery}
           separator="  "
-          url={`https://stephenleachman.com/project/${project.project.data.attributes.slug}`}  
+          url={`https://stephenleachman.com/blog/${slug}`}  
           className="w-[40px] h-[40px] grid place-content-center" 
           >
             <IoIosMail />
@@ -79,20 +83,20 @@ export default function ProjectPageShare(project: any) {
         </li>
       </ul>
         <ButtonThemed onClick={handleClick} disabled={isLoading}
-            color="gray" 
-            size="md"
-            as={Link}
-            radius="sm"
-            href="/projects"
-            className="w-full mt-4"
-            isLoading={isLoading}
+          color="gradiant" 
+          size="md"
+          as={Link}
+          radius="sm"
+          href="/blog"
+          className="w-full mt-4"
+          isLoading={isLoading}
           >
           {isLoading ? (
-              "Loading"
-            ) : (
-              <span className="text-lg">👉</span>
-            )}
-            Back To All Projects
+          "Loading"
+          ) : (
+            <span className="text-lg">👉</span>
+          )}
+          View All Articles
         </ButtonThemed>
     </div>
   )

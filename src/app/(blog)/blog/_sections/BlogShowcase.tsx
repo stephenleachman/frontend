@@ -30,34 +30,22 @@ async function BlogShowcase() {
 
   return (
     <>
-    <div className="flex justify-center mt-7 lg:mt-0">
-
-
+    <div className=" justify-center mt-7 lg:mt-0 hidden">
       <div className="container lg:hidden mb-[-35px]">
         <FilterCard Posts={Posts}/>  
       </div>
-      
     </div>
 
       <div className="flex justify-center">
-
         
-      {/* Deleat When Blog goes live */}
-      <div className="container h-full">
-        <h2 className="text-2xl text-center py-20 text-custom-dark-1 dark:text-custom-dark-text">
-        📝 Blog Coming Soon!
-        </h2>
-      </div>
-      {/*  */}
-        
-        {/* <div className="container grid grid-flow-col gap-8 z-10 py-10 lg:py-10 mb-16 sm:mb-0">
-          <div className="grid grid-col md:grid-cols-3  lg:grid-cols-3 xl:grid-cols-3 gap-8">
+        <div className="container grid grid-flow-col gap-8 z-10 py-10 lg:py-10 mb-16 sm:mb-0">
+          <div className="grid grid-col md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
               {Posts && Posts.data.map((post: any) => ( <BlogCard key={post.id} post={post}/>))}
           </div>
-          <div className="grid-col md:grid-cols-1 gap-8 hidden lg:grid">
+          {/* <div className="grid-col md:grid-cols-1 gap-8 hidden lg:grid">
             <FilterCard Posts={Posts}/>    
-          </div>  
-        </div>  */}
+          </div>   */}
+        </div> 
 
 
       </div>

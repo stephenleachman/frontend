@@ -45,7 +45,7 @@ function SideNav() {
                   <div className={`text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-custom-blue dark:hover:text-custom-blue transition ease delay-100 relative
                     ${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? ' text-sky-400 hover:text-custom-blue dark:hover:text-custom-blue dark:text-sky-400' : ''}
                     `}>
-                    <div className="py-4 grid justify-items-center font-medium	z-30">
+                    <div className="py-4 grid justify-items-center font-medium z-30">
                       {/* <FaRegUser className="text-2xl mb-2"/> {item.title} <react-icons icon={item.iconName} /> */}
                       {item.icon === 'FaRegUser' && <FaRegUser className="text-2xl mb-2"/>}
                       {item.icon === 'IoIosImages' && <IoIosImages className="text-2xl mb-2"/>}

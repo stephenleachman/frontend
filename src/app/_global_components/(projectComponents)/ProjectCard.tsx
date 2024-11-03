@@ -10,8 +10,18 @@ import 'swiper/css/navigation';
 import './project_card_swiper.css';
 
 import { Pagination } from 'swiper/modules';
+import { useState } from 'react';
 
 export default function ProjectCard(props: any) {
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClick = async () => {
+    setIsLoading(true);
+    // Simulate a network request or some async operation
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setIsLoading(false);
+  };
 
   const truncateProjectDesc  = props.project.attributes.overvierw.length > 200 ? 
   props.project.attributes.overvierw.substring(0, 200) + "..." : props.project.attributes.overvierw;
@@ -55,15 +65,16 @@ export default function ProjectCard(props: any) {
       {truncateProjectDesc}
       </p>
       <div className="mt-5">
-        <ButtonThemed 
+        <ButtonThemed onClick={handleClick} disabled={isLoading}
           color="gray" 
           size="lg"
           radius="sm"
           href={`/project/${props.project.attributes.slug}`}
           as={Link}
           className="font-medium dark:text-custom-gray-1 text-custom-dark-2"
+          isLoading={isLoading}
           >
-          Project Details
+          {isLoading ? "Loading" : "View Project"}
         </ButtonThemed>
       </div>
     </div>

@@ -86,7 +86,7 @@ const projectPage = async ({params}: any) => {
 
   return (
     <div className="flex justify-center sm:px-4 md:px-10 ">
-      <div className="container ">
+      <div className="container">
         <main className=" bg-custom-gray dark:bg-custom-dark-4">
           <section id="home" className="flex justify-center ">
             <ProjectPageHero project={project}/>

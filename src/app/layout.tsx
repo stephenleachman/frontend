@@ -4,7 +4,7 @@ import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 import { Toaster } from "react-hot-toast";
 // import CustomToast from '@/app/_global_components/ContactToast'
-import OGImage from '@/../public/images/hero-image-3.png'
+// import OGImage from '@/../public/images/hero-image-3.png'
 import GoogleAnalytics from '@/app/_global_components/GoogleAnalytics';
 
 

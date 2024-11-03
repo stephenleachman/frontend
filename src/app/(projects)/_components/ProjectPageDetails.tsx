@@ -1,4 +1,4 @@
-import '../project/[slug]/markdown.css';
+
 import Markdown from 'react-markdown'
 
 export default function ProjectPageDetails(project: any) {

@@ -1,52 +1,48 @@
-'use client'
-
+'use client';
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
 
-function ThemeToggler() {
-
-  const { theme, setTheme } = useTheme()
-  const systemTheme = 'system';
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+function ThemeToggler() {  
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
+  useEffect(() => {    
+    setMounted(true);  
   }, []);
 
   if (!mounted) return null;
-  
-  return (
 
+  // Determine if dark mode is currently active
+  const isDarkTheme = theme === 'dark' || (theme === 'system' && window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+  return (    
     <div className="flex items-center">
-      {/* {currentTheme === 'dark' ? <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">Light</p>: 
-        <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">Dark</p>} */}
-        
-        <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium	capitalize mr-3 mt-1">{currentTheme}</p>
-      <div className="h-8 w-8 text-xl font-bold	">
-        {currentTheme === 'dark' ? (
+      {/* Toggle text to show the opposite theme */}
+      <p className="text-custom-dark-1 dark:text-custom-dark-text font-medium capitalize mr-3 mt-1">
+        {isDarkTheme ? "Light" : "Dark"}
+      </p>
+
+      <div className="h-8 w-8 text-xl font-bold">        
+        {isDarkTheme ? (
           <button
-            className="text-custom-dark-1 dark:text-custom-dark-text rounded-md p-2 dark:hover:bg-custom-dark-2/50 hover:transition duration-500	"
+            className="text-custom-dark-1 dark:text-custom-dark-text rounded-md p-2 dark:hover:bg-custom-dark-2/50 hover:transition duration-500"
             onClick={() => setTheme('light')}
           >
-            {' '}
-          <MdSunny />
+            <MdSunny /> {/* Sun icon for Light theme */}
           </button>
         ) : (
           <button
-          className="text-custom-dark-1 dark:text-custom-dark-text rounded-md p-2 hover:bg-custom-dark-2/5 hover:transition duration-500"
-          onClick={() => setTheme('dark')}
-        >
-          {' '}
-          <BsMoonStarsFill />
+            className="text-custom-dark-1 dark:text-custom-dark-text rounded-md p-2 hover:bg-custom-dark-2/5 hover:transition duration-500"
+            onClick={() => setTheme('dark')}
+          >
+            <BsMoonStarsFill /> {/* Moon icon for Dark theme */}
           </button>
         )}
-      </div>
-    </div>
-  
-  )
+      </div>    
+    </div>  
+  );
 }
 
-export default ThemeToggler
+export default ThemeToggler;

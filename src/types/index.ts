@@ -13,7 +13,7 @@ export interface LinkButton {
 }
 
 export interface BadgeProps {
-    title: string;
+    title: React.ReactNode;
     classStyles?: string;
     key?: number;
     style?: any;

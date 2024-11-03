@@ -5,7 +5,7 @@
     { title: "Education", url: "education" },
     { title: "Work", url: "work", },
     { title: "Projects", url: "projects" },
-    // { title: "Blog", url: "blog" },
+    { title: "Blog", url: "blog" },
     { title: "Contact", url: "contact" },
   ];
 
@@ -14,7 +14,7 @@
     { title: "Services", url: "/services", icon: "FaRegHandshake"},
     { title: "Projects", url: "/projects", url2: "/project/", icon: "IoIosImages"},
     { title: "Teading", url: "/trading", icon: "BsGraphUpArrow"},
-    { title: "Blog", url: "/blog", icon: "TiPen"},
+    { title: "Blog", url: "/blog", url2: "/blog/", icon: "TiPen"},
   ];
 
   export const socialLinks = [

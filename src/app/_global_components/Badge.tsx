@@ -4,7 +4,7 @@ import { BadgeProps } from '@/types';
 function badge({ title, classStyles, key, style, }: BadgeProps) {
   return (
     <div 
-      className={`whitespace-nowrap tracking-wide px-5 py-1 rounded-md	text-sm	 bottom-2 left-2 ${classStyles}`}
+      className={`whitespace-nowrap tracking-wide px-5 py-1 rounded-md font-bold	text-sm	 bottom-2 left-2 ${classStyles}`}
       key={key}
       style={style}
     >

@@ -15,6 +15,8 @@ input:-webkit-autofill:active {
   border: none !important;
 } */
 
+
+
 /* IMPUT LIGHT */
 input:-webkit-autofill {
   color : rgb(0, 0, 0) !important;
@@ -31,7 +33,11 @@ input:-webkit-autofill {
   border: 2px solid #8899a872;
 }
 
+/* _____________________________________________________________________________________________________________________________________________________ */
+
 /* IMPUT DARK */
+
+/* _____________________________________________________________________________________________________________________________________________________ */
 .dark input:-webkit-autofill {
   color : rgb(0, 0, 0) !important;
   -webkit-text-fill-color: rgb(255, 255, 255) !important;
@@ -43,5 +49,134 @@ input:-webkit-autofill {
 
 .dark body {
   background-color: rgb(31 42 55)
+}
+
+/* MARKDOWN GLOBAL CSS */
+.markdown h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom:  1.25rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: #F3F4F6;  
+  font-weight: 400;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(147,51,234,1) 100%);
+  padding: 30px 0px 30px 0px;  
+  border-radius: 8px;
+  /* border: white 1px solid; */
+}
+.markdown h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem; 
+  margin-bottom:  1.25rem; 
+  
+  margin-top:  4rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  border-left: 4px solid #18BFFF;
+  padding-left: 20px;
+}
+/* .markdown h2:before {
+  content: '';
+  display: inline-block;
+  width: 5px; 
+  height: 35px; 
+  background: rgba(0,212,255,1);
+  margin-right: 20px; 
+  margin-bottom: -3px;
+  
+} */
+.dark .markdown h2 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown h3 {
+  font-size: 1.70rem;
+  line-height: 2.25rem;
+  margin-bottom:  1.25rem; 
+  margin-top: 2.50rem;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown h3 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown h4 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom:  1.1rem;
+  margin-top: 1.25rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown h4 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));  
+}
+.markdown p {
+  line-height: 1.75rem;
+  margin-bottom:  2.25rem;
+  letter-spacing: 0.05em;
+  /* line-height: 1.625; */
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown p {
+  --tw-text-opacity: 1;
+  color: rgb(136 153 168 / var(--tw-text-opacity));   
+}
+
+.markdown img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.markdown ul { 
+  margin-bottom: 1.25rem;
+}
+
+.markdown ul li { 
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-top: 0.4rem;
+  line-height: 1.75rem;
+  /* margin-bottom:  1.25rem; */
+  letter-spacing: 0.05em;
+  /* line-height: 1.625; */
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.dark .markdown ul li { 
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-top: 0.4rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05em;
+  /* line-height: 1.625; */
+  --tw-text-opacity: 1;
+  color: rgb(136 153 168 / var(--tw-text-opacity));   
+}
+
+.dark .markdown strong { 
+
+  --tw-text-opacity: 0.92;
+  color: rgb(249 250 251 / var(--tw-text-opacity))
+}
+.markdown a { 
+  --tw-text-opacity: 1;
+  color: #12b6f7;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.markdown a:hover { 
+  opacity: 70%;
+  transition: ease 500ms;
 }
 
