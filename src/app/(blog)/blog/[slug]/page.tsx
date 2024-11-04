@@ -35,7 +35,7 @@ async function fetchPost(slug: any) {
     const slug = post.data.attributes.slug;
     const summery = post.data.attributes.summery;
     const imgUrl = post.data.attributes.clover_image.data.attributes.url;
-    const previousImages = (await parent).openGraph?.images || [];
+    // const previousImages = (await parent).openGraph?.images || [];
     
     return {
       title: `Stephen Leachman - ${title}`,
@@ -45,7 +45,7 @@ async function fetchPost(slug: any) {
         description: summery,
         url: `https://stephenleachman.com/blog/${slug}`,
         siteName: "Stephen Leachmans Personal Portfolio",
-        images: [ imgUrl, ...previousImages],
+        images: [ imgUrl ],
         locale: 'en_US',
         type: 'website',
       },
