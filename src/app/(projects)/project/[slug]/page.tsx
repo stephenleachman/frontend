@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
   const slug = project.data.attributes.slug;
   const overvierw = project.data.attributes.overvierw;
   const imgUrl = project.data.attributes.project_cover.data[0].attributes.url;
-  const previousImages = (await parent).openGraph?.images || [];
+  // const previousImages = (await parent).openGraph?.images || [];
   return {
     title: `Stephen Leachman - ${title}`,
     description: overvierw,
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: { params: {slug: string}; }, 
       description: overvierw,
       url: `https://stephenleachman.com/project/${slug}`,
       siteName: "Stephen Leachmans Personal Portfolio",
-      images: [ imgUrl, ...previousImages ],
+      images: [ imgUrl ],
       locale: 'en_US',
       type: 'website',
     },

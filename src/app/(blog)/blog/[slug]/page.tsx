@@ -36,7 +36,7 @@ async function fetchPost(slug: any) {
     const summery = post.data.attributes.summery;
     const imgUrl = post.data.attributes.clover_image.data.attributes.url;
     // const previousImages = (await parent).openGraph?.images || [];
-    
+    // console.log(imgUrl)
     return {
       title: `Stephen Leachman - ${title}`,
       description: summery,
