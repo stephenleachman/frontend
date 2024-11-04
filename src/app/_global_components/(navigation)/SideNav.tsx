@@ -56,6 +56,9 @@ function SideNav() {
                     </div>
                     <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-[4px] bg-gradient-to-b from-custom-blue to-custom-green absolute right-0 mr-[-4px]' : ''}`}></div>
                     <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
+                    {/*  */}
+                    <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-[4px] bg-gradient-to-b from-custom-blue to-custom-green absolute right-0 mr-[-4px]' : ''}`}></div>
+                    <div className={`${pathname === `${item.url}` || pathname.includes(`${item.url2}`) ? 'h-full w-full bg-gradient-to-br from-custom-blue/10 to-custom-green/10 absolute backdrop-blur-sm' : ''}`}></div>
                   </div>
                 </Link>
               ))}

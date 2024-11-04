@@ -13,7 +13,7 @@
     { title: "About", url: "/" , icon: "FaRegUser"},
     { title: "Services", url: "/services", icon: "FaRegHandshake"},
     { title: "Projects", url: "/projects", url2: "/project/", icon: "IoIosImages"},
-    { title: "Teading", url: "/trading", icon: "BsGraphUpArrow"},
+    { title: "Teading", url: "/trading",  icon: "BsGraphUpArrow"},
     { title: "Blog", url: "/blog", url2: "/blog/", icon: "TiPen"},
   ];
 

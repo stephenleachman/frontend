@@ -31,7 +31,7 @@ export default function Hero() {
               <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl mb-5 md:mb-10 tracking-wide">Stephen Leachman</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-5 md:mb-10"></div>
             </div>
-            <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2">My Projects</h1>
+            <h1 className="text-5xl md:text-7xl tracking-wide bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent pb-2 inline-block">My Projects</h1>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mt-5 md:mt-10 lg:pr-10 lg:max-w-[700px]">
               Welcome to my portfolio of exciting projects! As you explore, you'll find detailed information about each project and have the opportunity to view them live.
             </p>

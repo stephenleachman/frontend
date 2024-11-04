@@ -27,15 +27,15 @@ function TridingLinkCard({ title, summery, backgroundImage, imgAlt, isDisabled =
             className="absolute h-full w-full z-0 blur-[2px]"
             >
         </Image>
-        <div className="bg-custom-gray dark:bg-custom-dark-3 absolute h-full w-full opacity-[85%] dark:opacity-[93%] select-none"></div>
+        <div className="bg-custom-gray dark:bg-custom-dark-3 absolute h-full w-full opacity-[90%] dark:opacity-[93%] select-none"></div>
         </div>
         <div className="sm:text-center z-10 p-5 relative">
-            <h2 className="text-3xl sm:text-4xl tracking-wide pb-2 bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent inline-block mb-5 font-semibold">{title}</h2>
+            <h2 className="text-3xl sm:text-4xl tracking-wide pb-2 bg-gradient-to-r from-custom-blue to-green-500 bg-clip-text text-transparent inline-block mb-2 sm:mb-5 font-semibold">{title}</h2>
             <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed mb-8 font-medium">
              {summery}
             </p>
             <ButtonThemed 
-                color="gradiant" 
+                color="gradiantGreen" 
                 isDisabled={isDisabled} 
                 size="lg"
                 radius="sm"

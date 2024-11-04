@@ -5,7 +5,7 @@ import TridingLinkCard from './_sections/TridingLinkCard'
 
 export const metadata: Metadata = {
   title: "Stephen Leachman - Trading",
-  description: "With a genuine passion for trading the financial markets, my trading site is the hub for all my trading activities. ",
+  description: "Join me on my journey as an active trader. On this page, you'll find my market research, analysis, strategies, and much more. I’m also excited to announce the future launch of a Trader’s University, designed for those eager to build a career in trading.",
   openGraph: {
     title: "",
     description: "",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Stephen Leachman - Trading",
-    description: "With a genuine passion for trading the financial markets, my trading site is the hub for all my trading activities.",
+    description: "Join me on my journey as an active trader. On this page, you'll find my market research, analysis, strategies, and much more. I’m also excited to announce the future launch of a Trader’s University, designed for those eager to build a career in trading.",
     creator: "Stephen Leachman",
     images: [
       {
