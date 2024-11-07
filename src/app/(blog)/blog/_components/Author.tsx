@@ -21,9 +21,9 @@ export default function Author(post: any) {
             >
         </Image>
       </div>
-      <div className="text-sm ml-5 content-center text-md text-custom-gray-link dark:text-custom-dark-text">
-        <h2 className="mb-2 italic">Auther: <span className="ml-2 not-italic font-medium tracking-wide text-custom-dark-2 dark:text-custom-gray-1">{authorName}</span></h2>
-        <h2 className="italic">Published: <span className="ml-2 not-italic font-medium tracking-wide text-custom-dark-2 dark:text-custom-gray-1">{new Date(publishedOn).toLocaleDateString('en-US', options)}</span></h2>
+      <div className="text-sm ml-5 content-center text-md text-link-text">
+        <h2 className="mb-2 italic">Auther: <span className="ml-2 not-italic font-medium tracking-wide text-heading-text">{authorName}</span></h2>
+        <h2 className="italic">Published: <span className="ml-2 not-italic font-medium tracking-wide text-heading-text">{new Date(publishedOn).toLocaleDateString('en-US', options)}</span></h2>
       </div>
     </div>
   )

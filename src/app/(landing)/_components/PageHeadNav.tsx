@@ -13,19 +13,19 @@ export default function PageHeadNav() {
     <div className="hidden lg:block">
     <div className="flex justify-center px-4 md:px-10">
       <div className="container">
-      <div className="backdrop-blur-sm  bg-custom-gray-1/80 dark:bg-custom-dark-2/80 text-custom-dark-text dark:text-custom-gray-link z-30 fixed top-0 flex pt-4 px-8 rounded-b-md">
+      <div className="backdrop-blur-lg bg-background-1/50 z-30 fixed top-0 flex pt-4 px-8 rounded-b-lg">
         <div className="flex gap-10">
         {homePageSectionLinks.map((item) => (
           <Link
             key={item.url}
             // href={item.url}      
-            activeClass="text-sky-500 border-b-3 border-custom-blue dark:text-sky-500" 
+            activeClass="border-b-3 border-primary-1 text-primary-1" 
             to={item.url}
             smooth={true}
             spy={true} 
             duration={0} 
             hashSpy={false}
-            className="cursor-pointer text-custom-dark-1 dark:text-custom-dark-text hover:text-sky-500 hover:dark:text-sky-500 font-medium	relative pb-3" >
+            className="cursor-pointer text-link-text hover:text-primary-1 font-medium	relative pb-3" >
             {item.title}
             </Link>
         ))}

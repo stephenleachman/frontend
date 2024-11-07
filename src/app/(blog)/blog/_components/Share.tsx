@@ -31,9 +31,9 @@ export default function Share(post: any) {
   };
   
   return (
-    <div className="rounded-xl max-w-full bg-custom-gray-1 dark:bg-custom-dark-4 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 mb-16 sm:mb-0">
-      <h2 className="text-xl ">Share This Articles</h2>
-      <ul className="flex flex-row lg:justify-between py-5 border-b border-custom-dark-link dark:border-custom-dark-1">
+    <div className="rounded-xl max-w-full bg-background-card-2 overflow-hidden shadow ring-1 ring-primary-1 p-5 mb-16 sm:mb-0">
+      <h2 className="text-xl font-medium text-heading-text">Share This Articles</h2>
+      <ul className="flex flex-row lg:justify-between py-5 border-b border-ring-color-1">
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#0077b5] w-[40px] h-[40px] grid place-content-center rounded-md">
           <LinkedinShareButton 
           title={title}
@@ -83,7 +83,7 @@ export default function Share(post: any) {
         </li>
       </ul>
         <ButtonThemed onClick={handleClick} disabled={isLoading}
-          color="gradiant" 
+          color="gray" 
           size="md"
           as={Link}
           radius="sm"

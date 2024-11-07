@@ -6,7 +6,7 @@ export default function ProjectPageProjectType(project: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 pt-10 sm:py-5">
+    <div className="sm:rounded-xl max-w-full bg-background-card-2 overflow-hidden sm:shadow sm:ring-1 ring-ring-color-1 p-5 pt-10 sm:py-5">
       <div className="flex flex-row">
         <Image 
           src={project.project.data.attributes.avatar.data.attributes.url} 
@@ -17,13 +17,13 @@ export default function ProjectPageProjectType(project: any) {
         >
         </Image>
         <div className="ml-5">
-          <h5 className="text-xs font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3">
+          <h5 className="text-xs font-bold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3">
             {project.project.data.attributes.project_type}  
           </h5>
-          <h4 className="text-xl font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50 my-2">
+          <h4 className="text-xl font-medium leading-relaxed text-heading-text my-2">
             {project.project.data.attributes.client_name}  
           </h4>
-          <div className="flex mt-1 text-xs items-center font-normal text-custom-dark-2 dark:text-custom-dark-text">
+          <div className="flex mt-1 font-medium text-xs items-center text-p-text">
              <FaRegCalendarAlt />
             <span className="text-sm ml-2 my-1">
               {new Date(project.project.data.attributes.project_data).toLocaleDateString('en-US', options)} 

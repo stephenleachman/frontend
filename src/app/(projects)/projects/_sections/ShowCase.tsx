@@ -34,11 +34,6 @@ async function RecentProjects() {
           {Projects && Projects.data.map((project: any) => ( <ProjectCard key={project.id} project={project}/>))}
         </div>
       </div>
-      {/* <div className="container h-full">
-        <h2 className="text-2xl text-center py-20 text-custom-dark-1 dark:text-custom-dark-text">
-        💻 Projects Coming Soon!
-        </h2>
-      </div> */}
     </div>
   )
 }

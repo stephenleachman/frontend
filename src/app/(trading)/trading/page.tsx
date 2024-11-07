@@ -91,11 +91,11 @@ const tradingCardInfo = [
 
 function TradingPage() {
   return (
-    <main className="bg-custom-gray dark:bg-custom-dark-4">
-      <section id="home" className="px-4 md:px-10 dark:bg-custom-dark-3 border-b-[3px] border-white dark:border-custom-dark-1 relative">
+    <main className="bg-background-4">
+      <section id="home" className="px-4 md:px-10 bg-background-3 border-b-[3px] border-border relative">
         <Hero />
       </section>
-      <section id="traders-home" className="px-4 md:px-10 bg-custom-gray dark:bg-custom-dark-4 sm:mb-10 mb-[90px]">
+      <section id="traders-home" className="px-4 md:px-10 bg-packground-4 sm:mb-10 mb-[90px]">
         <div className="flex justify-center">
           <div className="container mt-10">
             <div className="">

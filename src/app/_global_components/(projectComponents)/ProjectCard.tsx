@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { ButtonThemed } from '@/app/_global_components';
@@ -29,8 +30,8 @@ export default function ProjectCard(props: any) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: '2-digit' };
 
   return (
-    <div key={props.project.id} id="card" className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2">
-      <div id="cardHeader" className="max-h-[300px] flex items-center relative overflow-hidden border-b border-gray-100 dark:border-custom-dark-2">
+    <div key={props.project.id} id="card" className="rounded-xl max-w-full bg-background-card-2 font-semibold overflow-hidden relative flex flex-col shadow ring-1 ring-ring-color-1 ">
+      <div id="cardHeader" className="max-h-[300px] flex items-center relative overflow-hidden border-b border-ring-color-1">
       <Swiper
         pagination={{
           clickable: true,
@@ -58,10 +59,10 @@ export default function ProjectCard(props: any) {
         </Swiper> 
       </div>
     <div id="cardBody" className="p-5">
-      <h3 className="text-2xl dark:text-custom-gray-1 text-custom-dark-2 font-semibold dark:font-normal mb-5">
+      <h2 className="text-2xl text-heading-text dark:font-normal mb-5">
         {props.project.attributes.project_name}
-      </h3>
-      <p className="leading-relaxed text-custom-dark-1 dark:text-custom-dark-text font-normal	">
+      </h2>
+      <p className="leading-relaxed text-p-text font-normal">
       {truncateProjectDesc}
       </p>
       <div className="mt-5">
@@ -71,26 +72,26 @@ export default function ProjectCard(props: any) {
           radius="sm"
           href={`/project/${props.project.attributes.slug}`}
           as={Link}
-          className="font-medium dark:text-custom-gray-1 text-custom-dark-2"
+          // className="font-medium dark:text-custom-gray-1 text-custom-dark-2"
           isLoading={isLoading}
           >
           {isLoading ? "Loading" : "View Project"}
         </ButtonThemed>
       </div>
     </div>
-    <div id="cardFooter" className="p-5 border-t border-gray-200 dark:border-custom-dark-2 flex items-center">
+    <div id="cardFooter" className="p-5 border-t border-ring-color-1 flex items-center">
       <div>
         <Image 
           src={props.project.attributes.avatar.data.attributes.url} 
           alt={props.project.attributes.avatar.data.attributes.alternativeText}        
           height={50}
           width={50}    
-          className="rounded-full"        
+          className="rounded-full ring-1 ring-ring-color-1"        
         >
         </Image>
       </div>
-      <div className="ml-8 leading-relaxed dark:text-custom-dark-text text-custom-dark-2">
-        <h5 className="text-lg font-normal leading-relaxed text-custom-dark-2 dark:text-custom-dark-text">{props.project.attributes.client_name}</h5>
+      <div className="ml-8 leading-relaxed text-p-text">
+        <h5 className="text-lg font-normal leading-relaxed text-p-text">{props.project.attributes.client_name}</h5>
         <div className="flex mt-1 text-xs items-center font-normal">
           <FaRegCalendarAlt />
           <p className="text-sm ml-2 mt-[2px]">{new Date(props.project.attributes.project_data).toLocaleDateString('en-US', options)}</p>

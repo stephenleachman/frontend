@@ -1,29 +1,28 @@
 'use client'
 import Image from "next/image"
-import HeroImageMobile from '@/../public/images/mobile_hero_image.png';
 import HeroImageMobile2 from '@/../public/images/mobal-hero-image.png';
-import Logo from '@/../public/images/mainMenuIcons/NavLogo.svg'
+import Logo from '@/../public/images/nav-logo.svg'
 import { ButtonThemed } from "@/app/_global_components";
 import { TypeAnimation } from "react-type-animation";
 import Link from 'next/link';
 import { ThemeToggler } from "@/app/_global_components";
 import { socialLinks } from "@/constants";
-import { FaLinkedin, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa6";
+import { FaLinkedin, FaYoutube } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 
 export default function HeroMobile() {
   return (
-    <div className="h-[91vh] flex flex-col" >
-      <div className="flex justify-center bg-custom-gray dark:bg-custom-dark-2 w-full border-b-[3px] border-white dark:border-custom-dark-1">
+    <div className="min-h-[91vh] flex flex-col" >
+      <div className="flex justify-center bg-background-4 w-full border-b-[3px] border-border">
         <div className=" container relative flex justify-center">
-          <div className="self-end h-400px">
+          <div className="self-end">
           <Image
               src={HeroImageMobile2}
               alt="hero image of Stephen Leachman"
               height={400}
               width={400}
               priority
-              className="object-cover w-[280px] mt-10 "
+              className="object-cover w-[280px] mt-10 b"
             >
             </Image>
             </div>
@@ -34,6 +33,7 @@ export default function HeroMobile() {
               height={80}
               width={80}
               priority
+              className="bg-image-bg"
               >
               </Image>
             </div>
@@ -47,7 +47,7 @@ export default function HeroMobile() {
                 href={item.url}
                 target="_blank"
               >
-              <div className="py-2 text-xs grid justify-items-center text-custom-gray-link dark:text-custom-dark-text hover:text-sky-500 transition dark:hover:text-sky-500 ease delay-100 self-center"> 
+              <div className="py-2 text-xs grid justify-items-center text-link-text hover:text-primary-1 transition ease delay-100 self-center"> 
                 {item.icon === 'FaLinkedin' && <FaLinkedin className="text-2xl mb-2"/>}
                 {item.icon === 'BsTwitterX' && <BsTwitterX className="text-2xl mb-2"/>}
                 {item.icon === 'FaYoutube' && <FaYoutube className="text-2xl mb-2"/>}
@@ -57,17 +57,16 @@ export default function HeroMobile() {
           </div>
         </div>
       </div>
-     <div className="flex-grow dark:bg-custom-dark-4 w-full border-b-[3px] border-white dark:border-custom-dark-1 relative pb-10">
-      <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-[100%] w-full  dark:hidden "></div>
+     <div className="flex-grow bg-background-3 w-full border-b-[3px] border-border relative pb-10">
         <div className="container px-4 md:px-10 z-10 relative">
           <div className="flex items-center mt-10">
-            <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl mb-3 tracking-wide font-semibold	">👋 Hey, I’m</h2>
-            <div className="w-12 h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 self-center mb-3"></div>
+            <h2 className="text-p-text text-3xl mb-3 tracking-wide font-semibold	">👋 Hey, I’m</h2>
+            <div className="w-12 h-1 bg-gradient-to-b from-primary-1 to-primary-2 rounded ml-5 self-center mb-3"></div>
           </div>
-          <h1 className="text-custom-dark-2 dark:text-gray-50 text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
+          <h1 className="text-heading-text text-5xl tracking-wide font-medium leading-snug">Stephen Leachman</h1>
           <div className="flex flex-row">
-            <h2 className="text-custom-dark-2 dark:text-custom-dark-text text-3xl	my-5 font-semibold tracking-wider"> A </h2>
-            <span className="bg-gradient-to-r from-custom-blue to-custom-green bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
+            <h2 className="text-p-text text-3xl	my-5 font-semibold tracking-wider"> A </h2>
+            <span className="bg-gradient-to-b from-primary-1 to-primary-2 bg-clip-text text-transparent my-5 text-3xl font-semibold tracking-wider ml-3">
               <TypeAnimation
                 preRenderFirstString={true}
                 cursor={true}
@@ -90,13 +89,10 @@ export default function HeroMobile() {
               />
             </span>
           </div>
-          <p className="text-custom-dark-1 dark:text-custom-dark-text leading-relaxed text-lg mb-10 hidden sm:block">
-            Welcome to my portfolio website, and thanks for stopping by! Here, you can get to know me, explore some of my exciting projects, and possibly pick up a few new insights from my blog. Enjoy your visit!
-          </p>
 
           {/* ------------------ Services Button ------------------ */}
 
-          {/* <div className="mb-5">
+          <div className="mb-5 mt-5">
             <ButtonThemed 
               color="gradiant" 
               size="lg"
@@ -106,7 +102,7 @@ export default function HeroMobile() {
               >
                 My Services
             </ButtonThemed>
-          </div> */}
+          </div>
 
         </div>
       </div>

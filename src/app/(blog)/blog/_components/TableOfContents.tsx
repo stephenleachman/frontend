@@ -49,21 +49,10 @@ interface Heading {
     }, [content]);
   
     return (
-      <div className="rounded-xl max-w-full bg-custom-gray-1 dark:bg-custom-dark-4 overflow-hidden shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 sm:py-5 mt-5">
+      <div className="rounded-xl max-w-full shadow overflow-hidden ring-1 ring-primary-1 p-5 sm:py-5 mt-5">
         <nav>
-          <h2 className=" text-xl mb-5">📖 Table of Contents</h2>
-        
-          <ul  role="list" className="marker:text-custom-blue list-disc pl-5 ">
-            {/* {headings.map((heading) => (
-              <li className="pb-2" 
-                key={heading.id} 
-                style={{ marginLeft: heading.level === 3 ? '1em' : '0' }}
-                >
-                <a className="text-custom-gray-link dark:text-custom-gray-1 hover:text-custom-blue dark:hover:text-custom-blue transition ease-in-out " 
-                    href={`#${heading.id}`}>{heading.text}
-                </a>
-              </li>
-            ))} */}
+          <h2 className=" text-xl font-medium mb-5 text-heading-text">📖 Table of Contents</h2>
+          <ul  role="list" className="list-disc pl-5 text-sm ">
             {headings.map((heading) => {
               return (
                 <li className="pb-2"
@@ -77,7 +66,7 @@ interface Heading {
                     duration={0}
                     offset={-60}
                     hashSpy={false}
-                    className="cursor-pointer text-custom-gray-link dark:text-custom-dark-text hover:text-custom-blue dark:hover:text-custom-blue transition ease-in-out "
+                    className="cursor-pointer text-link-text hover:text-primary-1 transition ease-in-out"
                     >
                     {heading.text}
                     </ScrollLink>

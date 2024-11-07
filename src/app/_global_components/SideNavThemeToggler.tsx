@@ -20,11 +20,11 @@ function ThemeToggler() {
   
   return (
 
-    <div className="flex flex-col items-center mb-2">
+    <div className="flex flex-col items-center ">
       <div className="h-8 w-8 text-xl font-bold	">
         {currentTheme === 'dark' ? (
           <button
-            className="text-custom-dark-text dark:text-custom-dark-text rounded-md p-2 dark:hover:bg-custom-dark-2/50 hover:transition duration-500	"
+            className="text-link-text rounded-md p-2 hover:bg-background-1/30 hover:transition duration-500	"
             onClick={() => setTheme('light')}
           >
             {' '}
@@ -33,7 +33,7 @@ function ThemeToggler() {
           </button>
         ) : (
           <button
-          className="text-custom-gray-link dark:text-custom-dark-text rounded-md p-2 hover:bg-custom-dark-2/5 hover:transition duration-500"
+          className="text-link-text rounded-md p-2 hover:bg-background-1/30 hover:transition duration-500"
           onClick={() => setTheme('dark')}
         >
           {' '}

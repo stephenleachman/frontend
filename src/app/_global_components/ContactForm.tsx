@@ -6,6 +6,8 @@ import { FaUser } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+import { FiSend } from "react-icons/fi";
+
 
 const ContactForm = () => {
   const [data, setData] = useState({
@@ -62,7 +64,7 @@ const ContactForm = () => {
   return (
     <div
       id="card"
-      className="rounded-xl max-w-full bg-white font-semibold dark:bg-custom-dark-3 overflow-hidden relative flex flex-col shadow ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 mb-16"
+      className="rounded-xl max-w-full bg-background-card-2 font-semibold overflow-hidden relative flex flex-col shadow ring-1 ring-ring-color-1 mb-16"
     >
       <div id="cardBody" className="p-5">
         <form
@@ -71,7 +73,7 @@ const ContactForm = () => {
           method="POST"
           onSubmit={sendEmail}
         >
-          <h4 className="text-custom-dark-2 dark:text-gray-50 text-lg tracking-wide">
+          <h4 className="text-heading-text text-lg tracking-wide">
             📩 Sent Me An Email
           </h4>
           <div className="mt-5 text-base">
@@ -86,12 +88,12 @@ const ContactForm = () => {
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
               startContent={
-                <FaUser className="text-base text-default-400 pointer-events-none flex-shrink-0" />
+                <FaUser className="text-sm text-default-400 pointer-events-none flex-shrink-0" />
               }
               classNames={{
                 inputWrapper:
-                  "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none border-custom-gray-text dark:border-custom-dark-2",
-                input: "opacaty-0 text-base",
+                  "bg-background-4 shadow-none dark:border-border ",
+                input: "opacaty-0 text-base text-background-1",
               }}
             />
           </div>
@@ -111,7 +113,7 @@ const ContactForm = () => {
               }
               classNames={{
                 inputWrapper:
-                  "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
+                  "bg-background-4 shadow-none border-border dark:border-border",
                 input: "opacaty-0 text-base",
               }}
             />
@@ -128,7 +130,7 @@ const ContactForm = () => {
                 base: "w-full",
                 input: "h-[100px]",
                 inputWrapper:
-                  "bg-custom-gray-1 dark:bg-custom-dark-4 shadow-none	border-custom-gray-text dark:border-custom-dark-2",
+                  "bg-background-4 shadow-none	border-border dark:border-border",
               }}
               disableAutosize
             />
@@ -140,6 +142,9 @@ const ContactForm = () => {
               radius="sm"
               type="submit"
               isLoading={loading}
+              endContent={
+                <FiSend   />
+              }
             >
               {loading ? "Sending..." : "Send"}
             </ButtonThemed>

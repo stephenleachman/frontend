@@ -7,7 +7,7 @@ import Share from '../_components/Share';
 import Author from '../_components/Author';
 import Tags from '../_components/Tags';
 import Link from 'next/link';
-import logo from '@/../public/images/mainMenuIcons/NavLogo.svg'
+import logo from '@/../public/images/nav-logo.svg'
 
 async function fetchPost(slug: any) {
     const options ={
@@ -75,7 +75,7 @@ const postPage = async ({params}: any) => {
 
   return (
     <div className="mb-[70px] sm:mb-0">
-      <div className="dark:bg-custom-dark-3 sm:border-b-[3px] border-white dark:border-custom-dark-1 relative top-0 left-0 w-full overflow-hidden">
+      <div className="bg-background-4 dark:bg-background-3 sm:border-b-[3px] border-border relative top-0 left-0 w-full overflow-hidden">
         <section className="flex justify-center z-10 px-4 md:px-10">
           <div className="container relative z-10">
             <div className="absolute top-3 w-full flex justify-between items-center">
@@ -84,10 +84,10 @@ const postPage = async ({params}: any) => {
             >
             <Image
               src={logo}
-              alt=""
+              alt="Hero Logo"
               width={50}
               height={50}
-              className="sm:hidden border-2 border-custom-dark-2 rounded-sm	"
+              className="sm:hidden ring-1 ring-ring-color-1 rounded-sm bg-image-bg"
             >
             </Image>
             </Link>
@@ -95,15 +95,15 @@ const postPage = async ({params}: any) => {
           </div>
             </div>
           </section>
-        <div className="bg-gradient-to-r from-custom-Opacity-blue to-custom-Opacity-green absolute h-full w-full dark:hidden"></div>
+        {/* <div className="bg-gradient-to-b from-primary-1 to-primary-2 absolute h-full w-full dark:hidden"></div> */}
 
-        <section className="flex justify-center sm:px-4 md:px-10 z-10 pt-[80px] sm:pt-[100px] sm:pb-[180px] px-4 mb-5">
-          <div className="container relative z-10 text-center">
-            <div className="max-w-[980px] justify-self-center">
-              <h1 className="text-4xl sm:text-5xl leading-snug sm:leading-normal  inline-block">{post.data.attributes.title}</h1>
-              <div className="w-[100px] h-1 bg-gradient-to-r from-custom-blue to-custom-green rounded ml-5 mx-auto inline-block m-5 "></div>
+        <section className="flex justify-center sm:px-4 md:px-10 z-10 pt-[80px] sm:pt-[100px] sm:pb-[130px] px-4 mb-5">
+          <div className="container relative z-10 flex text-center justify-center">
+            <div className="max-w-[980px]">
+              <h1 className="text-4xl sm:text-5xl leading-snug sm:leading-normal inline-block text-heading-text">{post.data.attributes.title}</h1>
+              <div className="w-[100px] h-1 bg-gradient-to-b from-primary-1 to-primary-2 rounded mx-auto inline-block m-5 "></div>
               <div className="">
-                <p className="text-custom-dark-1 dark:text-custom-dark-text leading-7 tracking-wider">
+                <p className="text-p-text leading-7 tracking-wider">
                   {post.data.attributes.summery}
                 </p>
               </div>
@@ -118,12 +118,12 @@ const postPage = async ({params}: any) => {
         </section>
       </div>
           
-      <section className="flex justify-center mb-10 m:px-4 md:px-10">
-        <div className="container z-10 ">
-          <div className="sm:rounded-xl sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 bg-white dark:bg-custom-dark-3 sm:mt-[-110px] ">
-            <div className="max-h-[550px] overflow-hidden sm:border-b-[3px] border-white dark:border-custom-dark-1 relative  mx-5 sm:mx-0 sm:px-0">
-              <div className="h-full w-full bg-black absolute opacity-30 sm:rounded-t-xl rounded-xl sm:rounded-b-none"></div>
-              <div className="z-30 absolute bottom-2 left-2 hidden sm:block">
+      <section className="flex justify-center mb-10 m:px-4 md:px-10 bg-background-3 dark:bg-background-4">
+        <div className="container z-10 lg:max-w-[1300px]">
+          <div className="sm:rounded-xl sm:shadow sm:ring-1 ring-ring-color-1 bg-background-card-2 sm:mt-[-110px] ">
+            <div className="max-h-[550px] overflow-hidden sm:border-b-[3px] border-border relative  mx-5 sm:mx-0 sm:px-0">
+              <div className="h-full w-full bg-image-bg absolute opacity-30 sm:rounded-t-xl rounded-xl sm:rounded-b-none"></div>
+              <div className="z-30 absolute bottom-2 left-2 hidden sm:block ">
                 <Tags tags={tags}/>
               </div>
               <Image 

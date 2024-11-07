@@ -27,9 +27,9 @@ export default function ProjectPageShare(project: any) {
   };
   
   return (
-    <div className="sm:rounded-xl max-w-full bg-white dark:bg-custom-dark-3 overflow-hidden sm:shadow sm:ring-1 ring-custom-gray-1 dark:ring-custom-dark-2 p-5 mb-16 sm:mb-0">
-      <h2 className="text-md font-normal leading-relaxed text-custom-dark-2 dark:text-gray-50">Share This Project</h2>
-      <ul className="flex flex-row lg:justify-between py-5 border-b border-custom-dark-link dark:border-custom-dark-1">
+    <div className="sm:rounded-xl max-w-full bg-background-card-2 overflow-hidden sm:shadow sm:ring-1 ring-ring-color-1 p-5 mb-16 sm:mb-0">
+      <h2 className="text-xl font-medium leading-relaxed text-heading-text">Share This Project</h2>
+      <ul className="flex flex-row lg:justify-between py-5 border-b border-ring-color-1">
         <li className="text-2xl mr-3 hover:opacity-80 transition ease delay-100 text-white bg-[#0077b5] w-[40px] h-[40px] grid place-content-center rounded-md">
           <LinkedinShareButton 
           title={project.project.data.attributes.project_name}

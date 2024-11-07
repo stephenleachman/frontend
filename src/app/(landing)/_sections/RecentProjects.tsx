@@ -31,30 +31,31 @@ async function RecentProjects() {
     <div>
       <div className="flex justify-center">
         <div className="container grid z-10 py-16 md:py-24">
-          <h2 className="text-center text-5xl	dark:text-gray-50 text-custom-dark-2 tracking-wide">My Projects</h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-custom-blue to-custom-green rounded justify-self-center my-8"></div>
-          <div className="flex flex-col sm:flex-row sm:justify-between mb-5">
-            <p className="">
-              My Latest Projects
-            </p>
-            <div className="hidden sm:block">
+          <h2 className="text-center text-5xl	text-heading-text font-medium tracking-wide">My <span className="bg-gradient-to-b from-primary-2 to-primary-1 bg-clip-text text-transparent">Projects</span></h2>
+          <span className="text-center text-p-text font-medium leading-relaxed text-lg mt-5">Explore My Latest Web Development Projects</span>
+          <div className="h-1 w-20 bg-gradient-to-b from-primary-1 to-primary-2 rounded justify-self-center my-8"></div>
+          <div className="flex flex-col sm:flex-row sm:justify-between">
+            <span className="text-p-text mb-3 sm:mb-0">
+              Latest Projects
+            </span>
+            <div className="hidden sm:block my-2">
               <Link
                 href="/projects"
-                className="text-custom-dark-2 dark:text-gray-50 tracking-wide hover:opacity-75 transition-opacity font-semibold mb-5 mt-5 sm:mt-0 inline-block"
+                className="text-link-text underline underline-offset-8 decoration-dotted decoration-2 decoration-primary-1 tracking-wide hover:text-primary-1 hover:transition-all font-semibold	"
               >
-                View All Projects
+                👉 View Project Portfolio
               </Link>
             </div>
           </div>
           <div className="grid grid-col md:grid-cols-2 xl:grid-cols-3 gap-8">
             {Projects && Projects.data.map((project: any) => ( <ProjectCard key={project.id} project={project}/>))}
           </div>
-          <div className="sm:hidden">
+          <div className="sm:hidden mt-10">
             <Link
               href="/projects"
-              className="text-custom-dark-2 dark:text-gray-50 tracking-wide hover:opacity-75 transition-opacity font-semibold mt-5 inline-block"
+              className="text-link-text underline underline-offset-8 decoration-dotted decoration-2 decoration-primary-1 tracking-wide hover:text-primary-1 hover:transition-all font-semibold"
             >
-              View All Projects
+              👉 View Project Portfolio
             </Link>
           </div>
         </div>

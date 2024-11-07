@@ -17,7 +17,7 @@ export default function Tags(tags: any) {
                   <span className="mr-1"><FaHashtag /></span> {blog_tags.attributes.tag}
                 </span>
               }
-              classStyles={"dark:bg-custom-dark-4 bg-custom-gray-1 text-custom-dark-1 dark:text-custom-dark-text font-medium "}
+              classStyles={"bg-background-4 text-p-text font-medium text-sm"}
             />
           </li>
         ))}

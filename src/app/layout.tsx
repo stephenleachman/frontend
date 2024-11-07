@@ -1,11 +1,13 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
+import { fontSans } from "@/config/fonts";
 import './globals.css'
 import { Footer, SideNav, Providers, BottomNav } from './_global_components';
 import { Toaster } from "react-hot-toast";
 // import CustomToast from '@/app/_global_components/ContactToast'
 // import OGImage from '@/../public/images/hero-image-3.png'
 import GoogleAnalytics from '@/app/_global_components/GoogleAnalytics';
+
 
 
 const poppins = Poppins({
@@ -40,13 +42,20 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" style={{scrollBehavior:'smooth'}}>
+    <html suppressHydrationWarning lang="en" style={{scrollBehavior:'smooth'}}>
       <GoogleAnalytics />
       <body className={poppins.className}> 
         <Providers>
@@ -57,7 +66,7 @@ export default function RootLayout({
           <div className="fixed hidden sm:block">
             <SideNav />
           </div>
-          <div className="sm:ml-[91px] relative min-h-screen pb-[164px] sm:pb-[56px] bg-custom-gray dark:bg-custom-dark-4">
+          <div className="sm:ml-[89px] relative min-h-screen pb-[164px] sm:pb-[56px] bg-background-3 dark:bg-background-4">
             {children}
             <Footer />
           </div>
