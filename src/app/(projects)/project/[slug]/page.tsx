@@ -8,10 +8,11 @@ import {
   ProjectPageProjectType, 
   ProjectPageShare,
 } from '../../_components';
-
-import { Metadata, ResolvingMetadata } from 'next'
-import { useState } from 'react';
+import FooterLogo from '@/../public/images/footer-logo.svg';
+import FooterLogoLight from '@/../public/images/footer-logo-light.svg';
+import { Metadata, ResolvingMetadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 async function fetchProject(slug: any) {
@@ -100,7 +101,28 @@ const projectPage = async ({params}: any) => {
   return (
     <>
     <div className="flex justify-center sm:px-4 md:px-10">
-      <div className="container flex justify-end sm:ring-1 ring-ring-color-1 sm:mb-1 sm:rounded-b-xl overflow-hidden h-[50px] bg-background-card-2 px-5 content-center">
+      <div className="container flex justify-between sm:ring-1 ring-ring-color-1 sm:mb-1 sm:rounded-b-xl overflow-hidden h-[55px] bg-background-card-2 px-5 content-center sm:shadow">
+      <Link 
+          href={'/'}
+          className="self-center"
+          >
+          <Image
+            src={FooterLogo}
+            alt="Footer Logo"
+            height={30}
+            width={40}
+            className="dark:block hidden"
+          >
+          </Image>
+          <Image
+            src={FooterLogoLight}
+            alt="Footer Logo"
+            height={30}
+            width={40}
+            className="dark:hidden block"
+          >
+          </Image>
+        </Link>
         <ThemeToggler />
       </div>
     </div>
