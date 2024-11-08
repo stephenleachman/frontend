@@ -1,6 +1,17 @@
-import { ContactEmail, ContactSection } from '@/app/_global_components';
-import { ProjectPageDetails, ProjectPageHero, ProjectPageProjectDependencies, ProjectPageProjectTechStack, ProjectPageProjectType, ProjectPageShare } from '../../_components';
+
+import { ContactSection, LoadingButton, ThemeToggler } from '@/app/_global_components';
+import { 
+  ProjectPageDetails, 
+  ProjectPageHero, 
+  ProjectPageProjectDependencies, 
+  ProjectPageProjectTechStack, 
+  ProjectPageProjectType, 
+  ProjectPageShare,
+} from '../../_components';
+
 import { Metadata, ResolvingMetadata } from 'next'
+import { useState } from 'react';
+import Link from 'next/link';
 
 
 async function fetchProject(slug: any) {
@@ -88,6 +99,11 @@ const projectPage = async ({params}: any) => {
 
   return (
     <>
+    <div className="flex justify-center sm:px-4 md:px-10">
+      <div className="container flex justify-end sm:ring-1 ring-ring-color-1 sm:mb-1 sm:rounded-b-xl overflow-hidden h-[50px] bg-background-card-2 px-5 content-center">
+        <ThemeToggler />
+      </div>
+    </div>
     <div className="flex justify-center sm:px-4 md:px-10 ">
       <div className="container ">
         <main className="bg-background-3 dark:bg-background-4">
@@ -124,7 +140,7 @@ const projectPage = async ({params}: any) => {
         </main>
         </div>
       </div>
-    <div className="sm:border-t-[3px] border-border bg-background-3">
+      <div className="sm:border-t-[3px] border-border bg-background-3">
         <ContactSection/>
       </div>
     </>

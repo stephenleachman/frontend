@@ -12,6 +12,7 @@ import Badge from './Badge';
 import ContactSection from './ContactSection';
 import ContactForm from './ContactForm';
 import ContactEmail from './(EmailTemplates)/ContactEmail'
+import LoadingButton from './LoadingButton';
 
 export {
     SideNav,
@@ -28,4 +29,5 @@ export {
     ContactSection,
     ContactForm,
     ContactEmail,
+    LoadingButton,
 }

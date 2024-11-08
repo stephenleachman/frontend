@@ -1,0 +1,8 @@
+
+:root {
+    --nextui-primary-1-color: theme('colors.primary-1');
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--nextui-primary-1-color) !important;
+  }

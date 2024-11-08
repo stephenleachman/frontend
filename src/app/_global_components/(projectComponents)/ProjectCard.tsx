@@ -9,14 +9,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './project_card_swiper.css';
-
 import { Pagination } from 'swiper/modules';
 import { useState } from 'react';
 
 export default function ProjectCard(props: any) {
-
   const [isLoading, setIsLoading] = useState(false);
-
   const handleClick = async () => {
     setIsLoading(true);
     // Simulate a network request or some async operation
@@ -42,7 +39,7 @@ export default function ProjectCard(props: any) {
         >
         <ul>
         {props.project.attributes.project_cover.data.map((projectImage: any) => (  
-          <li  key={props.project.id} >
+          <li  key={projectImage.id} >
             <SwiperSlide className="cursor-grab" >
               <Image 
                 src={projectImage.attributes.url} 

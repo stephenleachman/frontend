@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function ProjectPageHero(project: any) {
 
   return (
-    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-ring-color-1 bg-background-card-2 sm:mt-5  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-10 sm:pb-5 xl:min-h-[460px]">
+    <div className="container sm:rounded-xl sm:shadow sm:ring-1 ring-ring-color-1 bg-background-card-2 sm:mt-4  flex flex-col-reverse xl:flex-row p-5  gap-7 md:gap-10 xl:gap-16 overflow-hidden pb-10 sm:pb-5 xl:min-h-[460px]">
       <div className="xl:w-2/4 flex flex-col justify-between ">
         <div>
           <h5 className="text-sm font-semibold uppercase text-yellow-600 bg-yellow-100 rounded-md inline-block py-1 px-3 mb-5">
@@ -65,6 +65,7 @@ export default function ProjectPageHero(project: any) {
       >
       <ul className="rounded-lg overflow-hidden">
         {project.project.data.attributes.project_cover.data.map((projectImage: any) => (  
+        
           <li key={projectImage.id} >
             <SwiperSlide className="" >
                 <Image 

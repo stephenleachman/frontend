@@ -26,7 +26,7 @@ async function fetchProjects() {
 async function RecentProjects() {
 
   const Projects = await fetchProjects(); 
-
+  
   return (
     <div>
       <div className="flex justify-center">
