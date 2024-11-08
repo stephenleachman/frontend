@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Stephen Leachmans Personal Portfolio",
     images: [
       {
-        url: 'https://res.cloudinary.com/dpthcnuy6/image/upload/v1704587309/open_graph.png',
+        url: 'https://res.cloudinary.com/dpthcnuy6/image/upload/v1731035644/large_Frame_18_c9dce0b4a8.png',
         width: 1260,
         height: 800,
       },
