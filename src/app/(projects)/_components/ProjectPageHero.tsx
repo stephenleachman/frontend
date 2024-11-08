@@ -22,25 +22,46 @@ export default function ProjectPageHero(project: any) {
             {project.project.data.attributes.project_name}
           </h1>
           <div className="h-1 w-20 bg-gradient-to-b from-primary-1 to-primary-2 rounded my-8 "></div>
-          <p className="text-p-text font-medium leading-7 tracking-wider">
+          <p className="text-p-text leading-7 tracking-wider">
             {project.project.data.attributes.overvierw}
           </p>
         </div>
         <div className="flex flex-col-reverse sm:flex-row mt-10">
           <div >
           <ButtonThemed 
-            color="gradiant" 
+            color="border" 
             size="lg"
             as={Link}
             radius="sm"
             href={project.project.data.attributes.project_live_url}
             target="_blank"
+            variant="bordered"
             >
-              View Live Project
+              View Live
           </ButtonThemed>
           </div>
           <div className="sm:self-center my-2 sm:my-0">
-            <Link className="inline-flex mt-1 text-normal items-center font-semibold text-link-text hover:text-primary-1 transition ease delay-100 sm:ml-5 md:ml-10 mb-5 sm:mb-0 " 
+            <Link className="
+              inline-flex 
+              mt-1 text-normal 
+              items-center 
+              font-semibold 
+              text-link-text 
+              tracking-wide
+              hover:text-primary-1 
+              transition 
+              ease 
+              delay-100 
+              sm:ml-5 
+              md:ml-10 
+              mb-5 
+              sm:mb-0 
+              underline 
+              decoration-dotted
+              underline-offset-8 
+              decoration-2
+              decoration-primary-1
+            " 
             href={project.project.data.attributes.project_github_link}
             target="_blank"
             >  
