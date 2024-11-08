@@ -20,11 +20,29 @@
     height: 100%;
     object-fit: cover;
   } */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :root {
+
+    --nextui-primary-1-color: theme('colors.primary-1');
+    --nextui-primary-2-color: theme('colors.primary-2');
+    --nextui-background-1-color: theme('colors.background-1');
+    --nextui-background-2-color: theme('colors.background-2');
+    --nextui-background-3-color: theme('colors.background-3');
+    --nextui-background-4-color: theme('colors.background-4');
+    --nextui-background-card-1-color: theme('colors.background-card-1');
+    --nextui-background-card-2-color: theme('colors.background-card-2');
+    --nextui-p-text-color: theme('colors.p-text');
+    --nextui-heading-text-color: theme('colors.heading-text');
+  }
+  
 
   .swiper-button-prev {
     font-size: 1px !important;
-    color: #18BFFF !important;
-    background-color: #CBEAF8 !important;
+    color: var(--nextui-background-4-color) !important;
+    background-color: var(--nextui-primary-1-color) !important;
     border-radius: 10% !important;
     height: 30px !important;
     width: 30px !important;
@@ -37,12 +55,15 @@
   }
   .swiper-button-next {
     font-size: 1px !important;
-    color: #18BFFF !important;
-    background-color: #CBEAF8 !important;
+    color: var(--nextui-background-4-color) !important;
+    background-color: var(--nextui-primary-1-color) !important;
     border-radius: 10% !important;
     height: 30px !important;
     width: 30px !important;
     margin-right: 20px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--nextui-primary-1-color) !important;
   }
   .swiper-button-next::after {
     font-size: 20px !important;

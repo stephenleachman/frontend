@@ -1,5 +1,7 @@
+import { ContactEmail, ContactSection } from '@/app/_global_components';
 import { ProjectPageDetails, ProjectPageHero, ProjectPageProjectDependencies, ProjectPageProjectTechStack, ProjectPageProjectType, ProjectPageShare } from '../../_components';
 import { Metadata, ResolvingMetadata } from 'next'
+
 
 async function fetchProject(slug: any) {
     const options ={
@@ -85,13 +87,14 @@ const projectPage = async ({params}: any) => {
   const fetchProjectTech = await fetchProjectTechnologies(params.slug)
 
   return (
+    <>
     <div className="flex justify-center sm:px-4 md:px-10 ">
-      <div className="container xl:max-w-[1300px]">
+      <div className="container ">
         <main className="bg-background-3 dark:bg-background-4">
           <section id="home" className="flex justify-center ">
             <ProjectPageHero project={project}/>
           </section>
-          <section id="Details" className="flex justify-center sm:pb-10 border-y-[3px] border-border sm:border-none ">
+          <section id="Details" className="flex justify-center sm:pb-5 border-t-[3px] border-border sm:border-none ">
 
             <div className="">
               <div className="flex flex-col-reverse lg:flex-row sm:gap-5">
@@ -102,7 +105,7 @@ const projectPage = async ({params}: any) => {
                   </div>
                 </div>
 
-                  <div className="lg:min-w-[320px] xl:min-w-[370px] lg:max-w-[320px] xl:max-w-[370px] flex flex-col sm:gap-5">
+                  <div className="lg:min-w-[320px] xl:min-w-[370px] lg:max-w-[320px] xl:max-w-[450px] flex flex-col sm:gap-5">
                     <div className="top-0 sticky sm:pt-5">
                       <div className="flex flex-col sm:gap-5">
                         <ProjectPageProjectType project={project}/>
@@ -119,8 +122,12 @@ const projectPage = async ({params}: any) => {
             </div>
           </section>
         </main>
+        </div>
       </div>
-    </div>
+    <div className="sm:border-t-[3px] border-border bg-background-3">
+        <ContactSection/>
+      </div>
+    </>
   )
 }
 export default projectPage;

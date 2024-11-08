@@ -13,7 +13,7 @@ export default function ProjectPageProjectType(project: any) {
           alt={project.project.data.attributes.avatar}     
           height={100}
           width={100}
-          className="object-cover rounded-lg"
+          className="object-cover rounded-lg ring-1 ring-ring-color-1"
         >
         </Image>
         <div className="ml-5">
