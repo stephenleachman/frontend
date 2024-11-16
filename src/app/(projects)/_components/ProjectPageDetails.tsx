@@ -16,7 +16,7 @@ export default function ProjectPageDetails(project: any) {
       </h2>
       
       <Markdown 
-        className="markdown"
+        className="markdown overflow-hidden"
         rehypePlugins={[rehypePrism]}
         components={{
           a: ({ node, href, ...props }) => {

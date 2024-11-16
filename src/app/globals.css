@@ -184,4 +184,5 @@ li::marker {
 }
 .markdown .code-highlight {
   text-wrap: wrap;
+  overflow: hidden;
 }
