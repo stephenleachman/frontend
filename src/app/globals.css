@@ -80,6 +80,7 @@ li::marker {
   border-radius: 8px;
   font-weight: 600;
 } */
+
 .markdown h2 {
   font-size: 2rem;
   line-height: 2.6rem; 
@@ -114,7 +115,7 @@ li::marker {
   line-height: 2rem;
   margin-bottom:  1.1rem;
   margin-top: 1.25rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color:  var(--nextui-heading-text-color);
@@ -126,8 +127,7 @@ li::marker {
 .markdown p {
   line-height: 1.60rem;
   margin-bottom:  2.25rem;
-  letter-spacing: 0.05em;
-  line-height: 1.55;
+  letter-spacing: 0.05rem;
   --tw-text-opacity: 1;
   color:  var(--nextui-p-text-color);
 }
@@ -153,6 +153,16 @@ li::marker {
   --tw-text-opacity: 1;
   color: var(--nextui-p-text-color);;
 }
+.markdown ol li { 
+  list-style-type: disc;
+  margin-left: 30px;
+  /* margin-bottom: 0.4rem; */
+  /* line-height: 1.8rem; */
+  letter-spacing: 0.05rem;
+  @apply list-decimal mb-4;
+  --tw-text-opacity: 1;
+  color: var(--nextui-p-text-color);;
+}
 .dark .markdown strong { 
   --tw-text-opacity: 0.92;
   color: rgb(249 250 251 / var(--tw-text-opacity))
@@ -168,4 +178,12 @@ li::marker {
   opacity: 70%;
   transition: ease 500ms;
 }
-
+.markdown .language-typescript { 
+  @apply mb-5 rounded-lg;
+  margin-top: -20px;
+  overflow-x: auto;
+}
+.markdown .code-highlight {
+  text-wrap: wrap;
+  overflow-y: scroll;
+}

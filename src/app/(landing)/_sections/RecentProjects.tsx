@@ -47,7 +47,7 @@ async function RecentProjects() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-col md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-col md:grid-cols-2 xl:grid-cols-3 gap-8 sm:mt-5">
             {Projects && Projects.data.map((project: any) => ( <ProjectCard key={project.id} project={project}/>))}
           </div>
           <div className="sm:hidden mt-10">
