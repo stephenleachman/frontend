@@ -126,7 +126,7 @@ const projectPage = async ({params}: any) => {
         <ThemeToggler />
       </div>
     </div>
-    <div className="flex justify-center sm:px-4 md:px-10 ">
+    <div className="flex justify-center sm:px-4 md:px-10 overflow-hidden">
       <div className="container ">
         <main className="bg-background-3 dark:bg-background-4">
           <section id="home" className="flex justify-center ">
