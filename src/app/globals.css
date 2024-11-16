@@ -179,11 +179,9 @@ li::marker {
   transition: ease 500ms;
 }
 .markdown .language-typescript { 
-  @apply mb-5 rounded-lg;
+  @apply mb-5 rounded-lg overflow-hidden;
   margin-top: -20px;
-  overflow-x: auto;
 }
 .markdown .code-highlight {
   text-wrap: wrap;
-  overflow-y: scroll;
 }
