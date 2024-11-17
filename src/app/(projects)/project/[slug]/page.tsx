@@ -134,7 +134,7 @@ const projectPage = async ({params}: any) => {
           </section>
           <section id="Details" className="flex justify-center sm:pb-5 border-t-[3px] border-border sm:border-none ">
 
-            <div className="overflow-hidden">
+            <div className="overflow-hidden sm:overflow-visible">
               <div className="flex flex-col-reverse lg:flex-row sm:gap-5">
                 <div className="flex-auto w-full lg:mt-5">
                   <ProjectPageDetails project={project}/>
