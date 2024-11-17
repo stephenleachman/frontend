@@ -1,6 +1,6 @@
 import { ThemeToggler } from '@/app/_global_components';
 import Image from 'next/image';
-// import HeroImage from '@/../public/images/hero_image-1.png';
+import DevImage from '@/../public/images/freelancerImage.svg';
 import logo from '@/../public/images/nav-logo.svg'
 import Link from 'next/link';
 import 'swiper/css/navigation';
@@ -35,16 +35,17 @@ export default function Hero() {
               Welcome to my portfolio of exciting projects! As you explore, you'll find detailed information about each project and have the opportunity to view them live.
             </p>
           </div>
-          <div className="justify-self-center	lg:mr-20 hidden lg:block">
-            {/* <Image
-              src={HeroImage}
-              alt="hero image of Stephen Leachman"
-              height={250}
-              width={250}
-              priority
-              className="object-cover"
-            >
-            </Image> */}
+          <div className="justify-self-center ml-5 hidden lg:block min-h-[320px] content-center">
+            <div className="flex justify-center bg-image-bg rounded-lg">
+              <Image 
+                src={DevImage} 
+                alt="Day Trading Image"
+                className="p-4"
+                height={200}
+                width={500}
+              >
+              </Image>
+            </div>
           </div>
         </div>
       </div>
